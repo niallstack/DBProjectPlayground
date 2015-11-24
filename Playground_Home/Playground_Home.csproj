@@ -60,6 +60,7 @@
     <Compile Include="RegisterStudentFrm.Designer.cs">
       <DependentUpon>RegisterStudentFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="StudentImpl.cs" />
     <Compile Include="viewProfileFrm.cs">
       <SubType>Form</SubType>
     </Compile>
