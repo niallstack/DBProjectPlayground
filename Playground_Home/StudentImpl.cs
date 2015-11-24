@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Playground_Home
 {
-    class StudentImpl
+    class StudentImpl : Student
     {
        private int studentID;
        private String forename;
@@ -18,6 +18,7 @@ namespace Playground_Home
        private int pictureCol;
        private String password;
        private String studentNumber;
+
 
         public StudentImpl(int studentID, string forename, string surname, string dob, int schoolID, int groupID, 
                            string gender, int pictureCol, string password, string studentNumber)
@@ -69,135 +70,56 @@ namespace Playground_Home
             this.studentNumber = studentNumber;
         }
 
-        public int StudentID
+        public int getStudentID()
         {
-            get
-            {
-                return studentID;
-            }
-
-            set
-            {
-                studentID = value;
-            }
+            return studentID;
         }
 
-        public string Forename
+        public string getForename()
         {
-            get
-            {
-                return forename;
-            }
-
-            set
-            {
-                forename = value;
-            }
+            return forename;
         }
 
-        public string Surname
+        public string getSurname()
         {
-            get
-            {
-                return surname;
-            }
-
-            set
-            {
-                surname = value;
-            }
+            return surname;
         }
 
-        public string Dob
+        public string getDOB()
         {
-            get
-            {
-                return dob;
-            }
-
-            set
-            {
-                dob = value;
-            }
+            return dob;
         }
 
-        public int SchoolID
+        public int getSchoolID()
         {
-            get
-            {
-                return schoolID;
-            }
-
-            set
-            {
-                schoolID = value;
-            }
+            return schoolID;
         }
 
-        public int GroupID
+        public int getGroupID()
         {
-            get
-            {
-                return groupID;
-            }
-
-            set
-            {
-                groupID = value;
-            }
+            return groupID;
         }
 
-        public string Gender
+        public string getGender()
         {
-            get
-            {
-                return gender;
-            }
-
-            set
-            {
-                gender = value;
-            }
+            return gender;
         }
 
-        public int PictureCol
+        public int getImage()
         {
-            get
-            {
-                return pictureCol;
-            }
-
-            set
-            {
-                pictureCol = value;
-            }
+            return pictureCol;
         }
 
-        public string Password
+        public string getPassword()
         {
-            get
-            {
-                return password;
-            }
-
-            set
-            {
-                password = value;
-            }
+            return password;
         }
 
-        public string StudentNumber
+        public string getStudentNumber()
         {
-            get
-            {
-                return studentNumber;
-            }
-
-            set
-            {
-                studentNumber = value;
-            }
+            return studentNumber;
         }
+
 
         public String toString()
         {
