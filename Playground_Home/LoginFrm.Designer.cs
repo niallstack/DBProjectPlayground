@@ -72,7 +72,7 @@
             // 
             // loginBtn
             // 
-            this.loginBtn.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.loginBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.OrangeRed;
             this.loginBtn.Location = new System.Drawing.Point(176, 301);
@@ -97,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(484, 462);
             this.Controls.Add(this.forgotPasswordLbl);
             this.Controls.Add(this.loginBtn);
@@ -107,6 +107,7 @@
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Playground_frm";
             this.Text = "Playground";
+            this.Load += new System.EventHandler(this.Playground_frm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Playground_Home
 {
-    public partial class Playground_frm : Form
+    public partial class viewProfileFrm : Form
     {
-        public Playground_frm()
+        public viewProfileFrm()
         {
             InitializeComponent();
         }
 
-        private void passwordTxt_TextChanged(object sender, EventArgs e)
+        private void viewProfileFrm_Load(object sender, EventArgs e)
         {
 
         }
