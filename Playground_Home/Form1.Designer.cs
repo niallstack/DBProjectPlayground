@@ -1,0 +1,122 @@
+﻿namespace Playground_Home
+{
+    partial class Playground_frm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.userNameTxt = new System.Windows.Forms.TextBox();
+            this.passwordTxt = new System.Windows.Forms.TextBox();
+            this.loginBtn = new System.Windows.Forms.Button();
+            this.forgotPasswordLbl = new System.Windows.Forms.LinkLabel();
+            this.SuspendLayout();
+            // 
+            // menuStrip
+            // 
+            this.menuStrip.BackColor = System.Drawing.Color.OrangeRed;
+            this.menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip.Name = "menuStrip";
+            this.menuStrip.Size = new System.Drawing.Size(484, 24);
+            this.menuStrip.TabIndex = 0;
+            this.menuStrip.Text = "menuStrip1";
+            // 
+            // userNameTxt
+            // 
+            this.userNameTxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.userNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userNameTxt.ForeColor = System.Drawing.Color.OrangeRed;
+            this.userNameTxt.Location = new System.Drawing.Point(154, 124);
+            this.userNameTxt.Name = "userNameTxt";
+            this.userNameTxt.Size = new System.Drawing.Size(179, 31);
+            this.userNameTxt.TabIndex = 3;
+            this.userNameTxt.Text = "Username";
+            this.userNameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // passwordTxt
+            // 
+            this.passwordTxt.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.passwordTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordTxt.ForeColor = System.Drawing.Color.OrangeRed;
+            this.passwordTxt.Location = new System.Drawing.Point(154, 196);
+            this.passwordTxt.Name = "passwordTxt";
+            this.passwordTxt.Size = new System.Drawing.Size(179, 31);
+            this.passwordTxt.TabIndex = 4;
+            this.passwordTxt.Text = "Password";
+            this.passwordTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // loginBtn
+            // 
+            this.loginBtn.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginBtn.ForeColor = System.Drawing.Color.OrangeRed;
+            this.loginBtn.Location = new System.Drawing.Point(176, 301);
+            this.loginBtn.Name = "loginBtn";
+            this.loginBtn.Size = new System.Drawing.Size(122, 43);
+            this.loginBtn.TabIndex = 5;
+            this.loginBtn.Text = "Login";
+            this.loginBtn.UseVisualStyleBackColor = false;
+            // 
+            // forgotPasswordLbl
+            // 
+            this.forgotPasswordLbl.AutoSize = true;
+            this.forgotPasswordLbl.LinkColor = System.Drawing.Color.WhiteSmoke;
+            this.forgotPasswordLbl.Location = new System.Drawing.Point(154, 233);
+            this.forgotPasswordLbl.Name = "forgotPasswordLbl";
+            this.forgotPasswordLbl.Size = new System.Drawing.Size(92, 13);
+            this.forgotPasswordLbl.TabIndex = 6;
+            this.forgotPasswordLbl.TabStop = true;
+            this.forgotPasswordLbl.Text = "Forgot Password?";
+            // 
+            // Playground_frm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(484, 462);
+            this.Controls.Add(this.forgotPasswordLbl);
+            this.Controls.Add(this.loginBtn);
+            this.Controls.Add(this.passwordTxt);
+            this.Controls.Add(this.userNameTxt);
+            this.Controls.Add(this.menuStrip);
+            this.MainMenuStrip = this.menuStrip;
+            this.Name = "Playground_frm";
+            this.Text = "Playground";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.TextBox userNameTxt;
+        private System.Windows.Forms.TextBox passwordTxt;
+        private System.Windows.Forms.Button loginBtn;
+        private System.Windows.Forms.LinkLabel forgotPasswordLbl;
+    }
+}
+
