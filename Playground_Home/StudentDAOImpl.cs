@@ -38,6 +38,8 @@ namespace Playground_Home
         {
             throw new NotImplementedException();
 
+            
+
             if(studentID == null)
             {
                 throw new ArgumentNullException("Student ID");
@@ -50,24 +52,20 @@ namespace Playground_Home
                 connection.ConnectionString = connectionString;
 
                 connection.Open();
-                Console.WriteLine("State: {0}", connection.State);
-
-                Console.WriteLine("ConnectionString: {0}",
-                                     connection.ConnectionString);
 
                 OracleCommand command = connection.CreateCommand();
-                string sql = "SELECT * FROM Students WHERE StudentID =" + studentID + "";
+
+                string sql = "SELECT * FROM Students WHERE StudentID = ?";
+
                 command.CommandText = sql;
 
-                OracleDataReader reader = command.ExecuteReader();
+                OracleParameter para = new OracleParameter("?", OracleType.Int32);
+                para.Value = studentID;
 
-                while (reader.Read())
-                {
-                    string myField = (string)reader["student"];
-                    Console.WriteLine(myField);
-                }
-                while (true) { }
-
+                command.Parameters.Add(para);
+                command.Prepare();
+                command.ExecuteNonQuery();
+              
                 connection.Close();
             }
         }
