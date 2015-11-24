@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +63,7 @@
     </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="StudentDAO.cs" />
+    <Compile Include="StudentDAOImpl.cs" />
     <Compile Include="StudentImpl.cs" />
     <Compile Include="viewProfileFrm.cs">
       <SubType>Form</SubType>
