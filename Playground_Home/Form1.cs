@@ -16,5 +16,10 @@ namespace Playground_Home
         {
             InitializeComponent();
         }
+
+        private void passwordTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
