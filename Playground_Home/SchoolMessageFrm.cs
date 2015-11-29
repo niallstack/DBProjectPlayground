@@ -10,14 +10,24 @@ using System.Windows.Forms;
 
 namespace Playground_Home
 {
-    public partial class RegisterStudentFrm : Form
+    public partial class SchoolMessageFrm : Form
     {
-        public RegisterStudentFrm()
+        public SchoolMessageFrm()
         {
             InitializeComponent();
         }
 
-        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

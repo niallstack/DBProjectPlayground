@@ -61,6 +61,12 @@
     <Compile Include="RegisterStudentFrm.Designer.cs">
       <DependentUpon>RegisterStudentFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SchoolMessageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SchoolMessageFrm.Designer.cs">
+      <DependentUpon>SchoolMessageFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student.cs" />
     <Compile Include="StudentDAO.cs" />
     <Compile Include="StudentDAOImpl.cs" />
@@ -85,6 +91,9 @@
     </Compile>
     <EmbeddedResource Include="RegisterStudentFrm.resx">
       <DependentUpon>RegisterStudentFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SchoolMessageFrm.resx">
+      <DependentUpon>SchoolMessageFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="viewProfileFrm.resx">
       <DependentUpon>viewProfileFrm.cs</DependentUpon>
