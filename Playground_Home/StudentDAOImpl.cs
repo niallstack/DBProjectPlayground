@@ -33,39 +33,54 @@ namespace Playground_Home
 
 
 
-        public StudentImpl read(int studentID)
+        public Student read(int studentID)
         {
-            throw new NotImplementedException();
+            try {
 
-            
 
-            if(studentID == null)
+
+                if (studentID == null)
+                {
+                    throw new ArgumentNullException("Student ID");
+                }
+
+                string connectionString = GetConnectionString("sw4", "sw4");
+
+                using (OracleConnection connection = new OracleConnection())
+                {
+                    connection.ConnectionString = connectionString;
+
+                    connection.Open();
+
+                    OracleCommand command = connection.CreateCommand();
+
+                    string sql = "SELECT * FROM Students WHERE StudentID = ?";
+
+                    command.CommandText = sql;
+
+                    OracleDataReader reader;
+                    reader = command.ExecuteReader();
+
+                    while (reader.Read())
+                    {
+
+                    }
+
+
+                        OracleParameter para = new OracleParameter("?", OracleType.Int32);
+                    para.Value = studentID;
+
+                    command.Parameters.Add(para);
+                    command.Prepare();
+                    command.ExecuteNonQuery();
+
+                    
+
+                    connection.Close();
+                }
+            }catch(NotImplementedException e)
             {
-                throw new ArgumentNullException("Student ID");
-            }
-
-            string connectionString = GetConnectionString("sw4","sw4");
-
-            using (OracleConnection connection = new OracleConnection())
-            {
-                connection.ConnectionString = connectionString;
-
-                connection.Open();
-
-                OracleCommand command = connection.CreateCommand();
-
-                string sql = "SELECT * FROM Students WHERE StudentID = ?";
-
-                command.CommandText = sql;
-
-                OracleParameter para = new OracleParameter("?", OracleType.Int32);
-                para.Value = studentID;
-
-                command.Parameters.Add(para);
-                command.Prepare();
-                command.ExecuteNonQuery();
-              
-                connection.Close();
+                
             }
         }
 
