@@ -16,9 +16,11 @@ namespace Playground_Home
         int getSchoolID();
         int getGroupID();
         String getGender();
-        int getImage();
+        Byte[] getImage();
         String getPassword();
         String getStudentNumber();
+
+        String getStatus();
 
     }
 }

@@ -15,13 +15,14 @@ namespace Playground_Home
        private int schoolID;
        private int groupID;
        private String gender;
-       private int pictureCol;
+        private Byte[] pictureCol;
        private String password;
        private String studentNumber;
+        private String status;
 
 
         public StudentImpl(int studentID, string forename, string surname, string dob, int schoolID, int groupID, 
-                           string gender, int pictureCol, string password, string studentNumber)
+                           string gender, Byte[] pictureCol, string password, string studentNumber, string status)
         {
             if(studentID == null)
             {
@@ -56,6 +57,11 @@ namespace Playground_Home
             if (dob == null)
             {
                 throw new ArgumentNullException("DOB");
+            }
+
+            if (status == null)
+            {
+                throw new ArgumentNullException("Status");
             }
 
             this.studentID = studentID;
@@ -105,7 +111,7 @@ namespace Playground_Home
             return gender;
         }
 
-        public int getImage()
+        public Byte[] getImage()
         {
             return pictureCol;
         }
@@ -116,6 +122,11 @@ namespace Playground_Home
         }
 
         public string getStudentNumber()
+        {
+            return studentNumber;
+        }
+
+        public string getStatus()
         {
             return studentNumber;
         }
@@ -144,6 +155,8 @@ namespace Playground_Home
             sb.Append(password);
             sb.Append("Student Number = ");
             sb.Append(studentNumber);
+            sb.Append("Student Status = ");
+            sb.Append(status);
 
             return sb.ToString();
         }

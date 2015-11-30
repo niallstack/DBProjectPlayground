@@ -18,7 +18,7 @@ namespace Playground_Home
         }
 
         public StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, 
-                                  int groupID, string gender, int pictureCol, string password, string studentNumber)
+                                  int groupID, string gender, int pictureCol, string password, string studentNumber, string status)
         {
             throw new NotImplementedException();
         }
@@ -33,19 +33,21 @@ namespace Playground_Home
 
 
 
-        public Student read(int studentID)
+        public StudentImpl read(int studentID)
         {
+ 
+
             try {
 
-
-
+                
                 if (studentID == null)
                 {
                     throw new ArgumentNullException("Student ID");
                 }
+                
 
                 string connectionString = GetConnectionString("sw4", "sw4");
-
+                StudentImpl student;
                 using (OracleConnection connection = new OracleConnection())
                 {
                     connection.ConnectionString = connectionString;
@@ -61,24 +63,40 @@ namespace Playground_Home
                     OracleDataReader reader;
                     reader = command.ExecuteReader();
 
-                    while (reader.Read())
-                    {
+                    reader.Read();
 
-                    }
+                    Int32 studentid = (Int32)reader["studentID"];
+                    String forename = (string)reader["forename"];
+                    String surname = (string)reader["surname"];
+                    String dob = (string)reader["dob"];
+                    Int32 schoolD = (Int32)reader["schoolID"];
+                    Int32 classID = (Int32)reader["classID"];
+                    String gender = (string)reader["gender"];
+                    Byte[] image = (Byte[])reader["image"];
+                    String studentPassword = (string)reader["studentpassword"];
+                    String studentnumber = (string)reader["studentnumber"];
+                    String status = (string)reader["status"];
 
+                     student = new StudentImpl(studentid, forename, surname, dob, schoolD, classID, gender, image, studentPassword, studentnumber, status);
 
-                        OracleParameter para = new OracleParameter("?", OracleType.Int32);
+                   
+
+                    OracleParameter para = new OracleParameter("?", OracleType.Int32);
                     para.Value = studentID;
 
                     command.Parameters.Add(para);
                     command.Prepare();
                     command.ExecuteNonQuery();
 
-                    
+                
 
                     connection.Close();
+
                 }
-            }catch(NotImplementedException e)
+                return student;
+
+            }
+            catch(NotImplementedException e)
             {
                 
             }
