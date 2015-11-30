@@ -13,7 +13,7 @@ namespace Playground_Home
         {
             // To avoid storing the connection string in your code, 
             // you can retrieve it from a configuration file.
-            // make sure to add your username and password here
+            // make sure to add your username and password here fgfg
             return "Data Source=cp3dbinstance.c4pxnpz4ojk8.us-east-1.rds.amazonaws.com;" + "User ID=" + username + ";Password=" + password;
         }
 
