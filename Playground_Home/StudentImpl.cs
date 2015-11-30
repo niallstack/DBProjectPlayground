@@ -82,7 +82,7 @@ namespace Playground_Home
 
         public string getSurname()
         {
-            return surname;
+            return surname; //Returns the surname of the student
         }
 
         public string getDOB()
