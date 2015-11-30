@@ -110,6 +110,7 @@
             this.editStuLinkLbl.TabIndex = 2;
             this.editStuLinkLbl.TabStop = true;
             this.editStuLinkLbl.Text = "Edit Student";
+            this.editStuLinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.editStuLinkLbl_LinkClicked);
             // 
             // delStuLinkLbl
             // 
@@ -122,6 +123,7 @@
             this.delStuLinkLbl.TabIndex = 1;
             this.delStuLinkLbl.TabStop = true;
             this.delStuLinkLbl.Text = "Remove Student";
+            this.delStuLinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.delStuLinkLbl_LinkClicked);
             // 
             // regStuLinkLbl
             // 
@@ -134,6 +136,7 @@
             this.regStuLinkLbl.TabIndex = 0;
             this.regStuLinkLbl.TabStop = true;
             this.regStuLinkLbl.Text = "Register Student";
+            this.regStuLinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.regStuLinkLbl_LinkClicked);
             // 
             // label1
             // 

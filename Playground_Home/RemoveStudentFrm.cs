@@ -34,17 +34,23 @@ namespace Playground_Home
 
         private void regStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            RegisterStudentFrm nf = new RegisterStudentFrm();
+            this.Close();
+            nf.Show();
         }
 
         private void delStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            RemoveStudentFrm nf = new RemoveStudentFrm();
+            this.Close();
+            nf.Show();
         }
 
         private void editStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            EditStudentFrm nf = new EditStudentFrm();
+            this.Close();
+            nf.Show();
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
