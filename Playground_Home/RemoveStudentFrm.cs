@@ -16,5 +16,75 @@ namespace Playground_Home
         {
             InitializeComponent();
         }
+
+        private void RemoveStudentFrm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void menuPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void regStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void delStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void editStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void logoutBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studGrd_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void sortLbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studIDBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void surnameBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grpBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void studnumBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -74,6 +74,7 @@
             this.studIDTxt.ReadOnly = true;
             this.studIDTxt.Size = new System.Drawing.Size(200, 20);
             this.studIDTxt.TabIndex = 2;
+            this.studIDTxt.TextChanged += new System.EventHandler(this.studIDTxt_TextChanged);
             // 
             // menuPnl
             // 

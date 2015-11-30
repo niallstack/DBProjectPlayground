@@ -56,6 +56,7 @@
             this.menuStrip.Size = new System.Drawing.Size(694, 24);
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip";
+            this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
             // menuPnl
             // 
@@ -68,6 +69,7 @@
             this.menuPnl.Name = "menuPnl";
             this.menuPnl.Size = new System.Drawing.Size(137, 483);
             this.menuPnl.TabIndex = 4;
+            this.menuPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.menuPnl_Paint);
             // 
             // logoutBtn
             // 
@@ -80,6 +82,7 @@
             this.logoutBtn.TabIndex = 24;
             this.logoutBtn.Text = "Log Out";
             this.logoutBtn.UseVisualStyleBackColor = false;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // editStuLinkLbl
             // 
@@ -92,6 +95,7 @@
             this.editStuLinkLbl.TabIndex = 2;
             this.editStuLinkLbl.TabStop = true;
             this.editStuLinkLbl.Text = "Edit Student";
+            this.editStuLinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.editStuLinkLbl_LinkClicked);
             // 
             // delStuLinkLbl
             // 
@@ -104,6 +108,7 @@
             this.delStuLinkLbl.TabIndex = 1;
             this.delStuLinkLbl.TabStop = true;
             this.delStuLinkLbl.Text = "Remove Student";
+            this.delStuLinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.delStuLinkLbl_LinkClicked);
             // 
             // regStuLinkLbl
             // 
@@ -116,6 +121,7 @@
             this.regStuLinkLbl.TabIndex = 0;
             this.regStuLinkLbl.TabStop = true;
             this.regStuLinkLbl.Text = "Register Student";
+            this.regStuLinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.regStuLinkLbl_LinkClicked);
             // 
             // label1
             // 
@@ -127,6 +133,7 @@
             this.label1.Size = new System.Drawing.Size(164, 24);
             this.label1.TabIndex = 25;
             this.label1.Text = "Remove Student";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // studGrd
             // 
@@ -135,6 +142,7 @@
             this.studGrd.Name = "studGrd";
             this.studGrd.Size = new System.Drawing.Size(501, 194);
             this.studGrd.TabIndex = 26;
+            this.studGrd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studGrd_CellContentClick);
             // 
             // studIDBtn
             // 
@@ -144,6 +152,7 @@
             this.studIDBtn.TabIndex = 27;
             this.studIDBtn.Text = "Student ID";
             this.studIDBtn.UseVisualStyleBackColor = true;
+            this.studIDBtn.Click += new System.EventHandler(this.studIDBtn_Click);
             // 
             // surnameBtn
             // 
@@ -153,6 +162,7 @@
             this.surnameBtn.TabIndex = 28;
             this.surnameBtn.Text = "Surname";
             this.surnameBtn.UseVisualStyleBackColor = true;
+            this.surnameBtn.Click += new System.EventHandler(this.surnameBtn_Click);
             // 
             // sortLbl
             // 
@@ -164,6 +174,7 @@
             this.sortLbl.Size = new System.Drawing.Size(61, 18);
             this.sortLbl.TabIndex = 29;
             this.sortLbl.Text = "Sort By:";
+            this.sortLbl.Click += new System.EventHandler(this.sortLbl_Click);
             // 
             // grpBtn
             // 
@@ -173,6 +184,7 @@
             this.grpBtn.TabIndex = 30;
             this.grpBtn.Text = "Group ID";
             this.grpBtn.UseVisualStyleBackColor = true;
+            this.grpBtn.Click += new System.EventHandler(this.grpBtn_Click);
             // 
             // studnumBtn
             // 
@@ -182,6 +194,7 @@
             this.studnumBtn.TabIndex = 31;
             this.studnumBtn.Text = "Student No.";
             this.studnumBtn.UseVisualStyleBackColor = true;
+            this.studnumBtn.Click += new System.EventHandler(this.studnumBtn_Click);
             // 
             // stuIDLbl
             // 
@@ -235,6 +248,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "RemoveStudentFrm";
             this.Text = "RemoveStudentFrm";
+            this.Load += new System.EventHandler(this.RemoveStudentFrm_Load);
             this.menuPnl.ResumeLayout(false);
             this.menuPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studGrd)).EndInit();
