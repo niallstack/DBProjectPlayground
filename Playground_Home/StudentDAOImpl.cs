@@ -9,13 +9,12 @@ namespace Playground_Home
 {
     class StudentDAOImpl : StudentDAO
     {
-        static private string GetConnectionString()
+        static private string GetConnectionString(String username, String password)
         {
             // To avoid storing the connection string in your code, 
             // you can retrieve it from a configuration file.
             // make sure to add your username and password here
-            return "Data Source=studentoracle.students.ittralee.ie:1521/orcl;" +
-                   "User ID=?;Password=?";
+            return "Data Source=cp3dbinstance.c4pxnpz4ojk8.us-east-1.rds.amazonaws.com;" + "User ID=" + username + ";Password=" + password;
         }
 
         public StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, 
@@ -45,7 +44,7 @@ namespace Playground_Home
                 throw new ArgumentNullException("Student ID");
             }
 
-            string connectionString = GetConnectionString();
+            string connectionString = GetConnectionString("sw4","sw4");
 
             using (OracleConnection connection = new OracleConnection())
             {
