@@ -51,17 +51,15 @@
             this.forenameTxt = new System.Windows.Forms.TextBox();
             this.stuIDLbl = new System.Windows.Forms.Label();
             this.studIDTxt = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.regBtn = new System.Windows.Forms.Button();
+            this.genCBM = new System.Windows.Forms.ComboBox();
+            this.studNumTxt = new System.Windows.Forms.Label();
+            this.stuNumTxt = new System.Windows.Forms.TextBox();
+            this.passwordLbl = new System.Windows.Forms.Label();
+            this.passwordTxt = new System.Windows.Forms.TextBox();
+            this.imageLbl = new System.Windows.Forms.Label();
+            this.imgTxt = new System.Windows.Forms.TextBox();
+            this.genderLbl = new System.Windows.Forms.Label();
             this.menuPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studGrd)).BeginInit();
             this.SuspendLayout();
@@ -71,7 +69,7 @@
             this.menuStrip.BackColor = System.Drawing.Color.OrangeRed;
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(817, 24);
+            this.menuStrip.Size = new System.Drawing.Size(913, 24);
             this.menuStrip.TabIndex = 3;
             this.menuStrip.Text = "menuStrip";
             // 
@@ -201,7 +199,7 @@
             this.studGrd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.studGrd.Location = new System.Drawing.Point(161, 70);
             this.studGrd.Name = "studGrd";
-            this.studGrd.Size = new System.Drawing.Size(638, 194);
+            this.studGrd.Size = new System.Drawing.Size(724, 194);
             this.studGrd.TabIndex = 32;
             // 
             // groupIDlbl
@@ -296,127 +294,109 @@
             this.studIDTxt.Size = new System.Drawing.Size(200, 20);
             this.studIDTxt.TabIndex = 38;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label2.Location = new System.Drawing.Point(486, 472);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 20);
-            this.label2.TabIndex = 57;
-            this.label2.Text = "Group ID";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(599, 472);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 56;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(599, 432);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 55;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label3.Location = new System.Drawing.Point(517, 432);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 20);
-            this.label3.TabIndex = 54;
-            this.label3.Text = "DOB";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label4.Location = new System.Drawing.Point(487, 390);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "Surname";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(599, 390);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 52;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label5.Location = new System.Drawing.Point(479, 349);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 20);
-            this.label5.TabIndex = 51;
-            this.label5.Text = "Forename";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(599, 351);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 20);
-            this.textBox3.TabIndex = 50;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label6.Location = new System.Drawing.Point(474, 308);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
-            this.label6.TabIndex = 49;
-            this.label6.Text = "Student ID";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(599, 308);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(200, 20);
-            this.textBox4.TabIndex = 48;
-            // 
             // regBtn
             // 
             this.regBtn.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.regBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regBtn.ForeColor = System.Drawing.Color.OrangeRed;
-            this.regBtn.Location = new System.Drawing.Point(419, 510);
+            this.regBtn.Location = new System.Drawing.Point(465, 510);
             this.regBtn.Name = "regBtn";
             this.regBtn.Size = new System.Drawing.Size(122, 43);
             this.regBtn.TabIndex = 58;
             this.regBtn.Text = "Confirm";
             this.regBtn.UseVisualStyleBackColor = false;
             // 
+            // genCBM
+            // 
+            this.genCBM.FormattingEnabled = true;
+            this.genCBM.Location = new System.Drawing.Point(665, 310);
+            this.genCBM.Name = "genCBM";
+            this.genCBM.Size = new System.Drawing.Size(121, 21);
+            this.genCBM.TabIndex = 66;
+            // 
+            // studNumTxt
+            // 
+            this.studNumTxt.AutoSize = true;
+            this.studNumTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studNumTxt.ForeColor = System.Drawing.Color.OrangeRed;
+            this.studNumTxt.Location = new System.Drawing.Point(501, 432);
+            this.studNumTxt.Name = "studNumTxt";
+            this.studNumTxt.Size = new System.Drawing.Size(126, 20);
+            this.studNumTxt.TabIndex = 65;
+            this.studNumTxt.Text = "Student Number";
+            // 
+            // stuNumTxt
+            // 
+            this.stuNumTxt.Location = new System.Drawing.Point(665, 432);
+            this.stuNumTxt.Name = "stuNumTxt";
+            this.stuNumTxt.ReadOnly = true;
+            this.stuNumTxt.Size = new System.Drawing.Size(200, 20);
+            this.stuNumTxt.TabIndex = 64;
+            // 
+            // passwordLbl
+            // 
+            this.passwordLbl.AutoSize = true;
+            this.passwordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordLbl.ForeColor = System.Drawing.Color.OrangeRed;
+            this.passwordLbl.Location = new System.Drawing.Point(549, 393);
+            this.passwordLbl.Name = "passwordLbl";
+            this.passwordLbl.Size = new System.Drawing.Size(78, 20);
+            this.passwordLbl.TabIndex = 63;
+            this.passwordLbl.Text = "Password";
+            // 
+            // passwordTxt
+            // 
+            this.passwordTxt.Location = new System.Drawing.Point(665, 393);
+            this.passwordTxt.Name = "passwordTxt";
+            this.passwordTxt.ReadOnly = true;
+            this.passwordTxt.Size = new System.Drawing.Size(200, 20);
+            this.passwordTxt.TabIndex = 62;
+            // 
+            // imageLbl
+            // 
+            this.imageLbl.AutoSize = true;
+            this.imageLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imageLbl.ForeColor = System.Drawing.Color.OrangeRed;
+            this.imageLbl.Location = new System.Drawing.Point(573, 356);
+            this.imageLbl.Name = "imageLbl";
+            this.imageLbl.Size = new System.Drawing.Size(54, 20);
+            this.imageLbl.TabIndex = 61;
+            this.imageLbl.Text = "Image";
+            // 
+            // imgTxt
+            // 
+            this.imgTxt.Location = new System.Drawing.Point(665, 356);
+            this.imgTxt.Name = "imgTxt";
+            this.imgTxt.ReadOnly = true;
+            this.imgTxt.Size = new System.Drawing.Size(200, 20);
+            this.imgTxt.TabIndex = 60;
+            // 
+            // genderLbl
+            // 
+            this.genderLbl.AutoSize = true;
+            this.genderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderLbl.ForeColor = System.Drawing.Color.OrangeRed;
+            this.genderLbl.Location = new System.Drawing.Point(564, 311);
+            this.genderLbl.Name = "genderLbl";
+            this.genderLbl.Size = new System.Drawing.Size(63, 20);
+            this.genderLbl.TabIndex = 59;
+            this.genderLbl.Text = "Gender";
+            // 
             // EditStudentFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(817, 565);
+            this.ClientSize = new System.Drawing.Size(913, 565);
+            this.Controls.Add(this.genCBM);
+            this.Controls.Add(this.studNumTxt);
+            this.Controls.Add(this.stuNumTxt);
+            this.Controls.Add(this.passwordLbl);
+            this.Controls.Add(this.passwordTxt);
+            this.Controls.Add(this.imageLbl);
+            this.Controls.Add(this.imgTxt);
+            this.Controls.Add(this.genderLbl);
             this.Controls.Add(this.regBtn);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.groupIDlbl);
             this.Controls.Add(this.groupIDTxt);
             this.Controls.Add(this.dobTP);
@@ -471,16 +451,14 @@
         private System.Windows.Forms.TextBox forenameTxt;
         private System.Windows.Forms.Label stuIDLbl;
         private System.Windows.Forms.TextBox studIDTxt;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button regBtn;
+        private System.Windows.Forms.ComboBox genCBM;
+        private System.Windows.Forms.Label studNumTxt;
+        private System.Windows.Forms.TextBox stuNumTxt;
+        private System.Windows.Forms.Label passwordLbl;
+        private System.Windows.Forms.TextBox passwordTxt;
+        private System.Windows.Forms.Label imageLbl;
+        private System.Windows.Forms.TextBox imgTxt;
+        private System.Windows.Forms.Label genderLbl;
     }
 }
