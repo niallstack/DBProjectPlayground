@@ -10,33 +10,23 @@ using System.Windows.Forms;
 
 namespace Playground_Home
 {
-    public partial class RegisterStudentFrm : Form
+    public partial class EditStudentFrm : Form
     {
-        public RegisterStudentFrm()
+        public EditStudentFrm()
         {
             InitializeComponent();
-        }
-
-        private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void studIDTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void delStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            RemoveStudentFrm nf = new RemoveStudentFrm();
-            this.Close();
-            nf.Show();
         }
 
         private void editStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             EditStudentFrm nf = new EditStudentFrm();
+            this.Close();
+            nf.Show();
+        }
+
+        private void delStuLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RemoveStudentFrm nf = new RemoveStudentFrm();
             this.Close();
             nf.Show();
         }

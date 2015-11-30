@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EditStudentFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditStudentFrm.Designer.cs">
+      <DependentUpon>EditStudentFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,12 @@
     </Compile>
     <Compile Include="RegisterStudentFrm.Designer.cs">
       <DependentUpon>RegisterStudentFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveStudentFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveStudentFrm.Designer.cs">
+      <DependentUpon>RemoveStudentFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="SchoolMessageFrm.cs">
       <SubType>Form</SubType>
@@ -77,6 +89,9 @@
     <Compile Include="viewProfileFrm.Designer.cs">
       <DependentUpon>viewProfileFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EditStudentFrm.resx">
+      <DependentUpon>EditStudentFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginFrm.resx">
       <DependentUpon>LoginFrm.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +106,9 @@
     </Compile>
     <EmbeddedResource Include="RegisterStudentFrm.resx">
       <DependentUpon>RegisterStudentFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveStudentFrm.resx">
+      <DependentUpon>RemoveStudentFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SchoolMessageFrm.resx">
       <DependentUpon>SchoolMessageFrm.cs</DependentUpon>
