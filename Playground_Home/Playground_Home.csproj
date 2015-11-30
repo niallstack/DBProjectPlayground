@@ -61,6 +61,12 @@
     <Compile Include="RegisterStudentFrm.Designer.cs">
       <DependentUpon>RegisterStudentFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="RemoveStudentFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveStudentFrm.Designer.cs">
+      <DependentUpon>RemoveStudentFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SchoolMessageFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </Compile>
     <EmbeddedResource Include="RegisterStudentFrm.resx">
       <DependentUpon>RegisterStudentFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveStudentFrm.resx">
+      <DependentUpon>RemoveStudentFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SchoolMessageFrm.resx">
       <DependentUpon>SchoolMessageFrm.cs</DependentUpon>
