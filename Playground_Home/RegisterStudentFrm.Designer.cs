@@ -63,19 +63,19 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip.Size = new System.Drawing.Size(1041, 24);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip.Size = new System.Drawing.Size(925, 24);
             this.menuStrip.TabIndex = 1;
             this.menuStrip.Text = "menuStrip";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
             // 
             // studIDTxt
             // 
-            this.studIDTxt.Location = new System.Drawing.Point(660, 77);
-            this.studIDTxt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.studIDTxt.Location = new System.Drawing.Point(587, 62);
+            this.studIDTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.studIDTxt.Name = "studIDTxt";
             this.studIDTxt.ReadOnly = true;
-            this.studIDTxt.Size = new System.Drawing.Size(298, 26);
+            this.studIDTxt.Size = new System.Drawing.Size(265, 22);
             this.studIDTxt.TabIndex = 2;
             this.studIDTxt.TextChanged += new System.EventHandler(this.studIDTxt_TextChanged);
             // 
@@ -86,10 +86,10 @@
             this.menuPnl.Controls.Add(this.editStuLinkLbl);
             this.menuPnl.Controls.Add(this.delStuLinkLbl);
             this.menuPnl.Controls.Add(this.regStuLinkLbl);
-            this.menuPnl.Location = new System.Drawing.Point(0, 42);
-            this.menuPnl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.menuPnl.Location = new System.Drawing.Point(0, 34);
+            this.menuPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.menuPnl.Name = "menuPnl";
-            this.menuPnl.Size = new System.Drawing.Size(206, 743);
+            this.menuPnl.Size = new System.Drawing.Size(183, 594);
             this.menuPnl.TabIndex = 3;
             // 
             // logoutBtn
@@ -97,10 +97,10 @@
             this.logoutBtn.BackColor = System.Drawing.Color.OrangeRed;
             this.logoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.logoutBtn.Location = new System.Drawing.Point(9, 662);
-            this.logoutBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.logoutBtn.Location = new System.Drawing.Point(8, 530);
+            this.logoutBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(183, 66);
+            this.logoutBtn.Size = new System.Drawing.Size(163, 53);
             this.logoutBtn.TabIndex = 24;
             this.logoutBtn.Text = "Log Out";
             this.logoutBtn.UseVisualStyleBackColor = false;
@@ -110,10 +110,10 @@
             this.editStuLinkLbl.AutoSize = true;
             this.editStuLinkLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editStuLinkLbl.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.editStuLinkLbl.Location = new System.Drawing.Point(4, 160);
+            this.editStuLinkLbl.Location = new System.Drawing.Point(4, 128);
             this.editStuLinkLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.editStuLinkLbl.Name = "editStuLinkLbl";
-            this.editStuLinkLbl.Size = new System.Drawing.Size(143, 29);
+            this.editStuLinkLbl.Size = new System.Drawing.Size(111, 24);
             this.editStuLinkLbl.TabIndex = 2;
             this.editStuLinkLbl.TabStop = true;
             this.editStuLinkLbl.Text = "Edit Student";
@@ -124,10 +124,10 @@
             this.delStuLinkLbl.AutoSize = true;
             this.delStuLinkLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delStuLinkLbl.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.delStuLinkLbl.Location = new System.Drawing.Point(4, 98);
+            this.delStuLinkLbl.Location = new System.Drawing.Point(4, 78);
             this.delStuLinkLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.delStuLinkLbl.Name = "delStuLinkLbl";
-            this.delStuLinkLbl.Size = new System.Drawing.Size(191, 29);
+            this.delStuLinkLbl.Size = new System.Drawing.Size(150, 24);
             this.delStuLinkLbl.TabIndex = 1;
             this.delStuLinkLbl.TabStop = true;
             this.delStuLinkLbl.Text = "Remove Student";
@@ -139,10 +139,10 @@
             this.regStuLinkLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regStuLinkLbl.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.regStuLinkLbl.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.regStuLinkLbl.Location = new System.Drawing.Point(4, 35);
+            this.regStuLinkLbl.Location = new System.Drawing.Point(4, 28);
             this.regStuLinkLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.regStuLinkLbl.Name = "regStuLinkLbl";
-            this.regStuLinkLbl.Size = new System.Drawing.Size(192, 29);
+            this.regStuLinkLbl.Size = new System.Drawing.Size(148, 24);
             this.regStuLinkLbl.TabIndex = 0;
             this.regStuLinkLbl.TabStop = true;
             this.regStuLinkLbl.Text = "Register Student";
@@ -153,10 +153,10 @@
             this.stuIDLbl.AutoSize = true;
             this.stuIDLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stuIDLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.stuIDLbl.Location = new System.Drawing.Point(472, 77);
+            this.stuIDLbl.Location = new System.Drawing.Point(420, 62);
             this.stuIDLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.stuIDLbl.Name = "stuIDLbl";
-            this.stuIDLbl.Size = new System.Drawing.Size(124, 29);
+            this.stuIDLbl.Size = new System.Drawing.Size(104, 25);
             this.stuIDLbl.TabIndex = 4;
             this.stuIDLbl.Text = "Student ID";
             // 
@@ -165,19 +165,19 @@
             this.forenameLbl.AutoSize = true;
             this.forenameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forenameLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.forenameLbl.Location = new System.Drawing.Point(480, 140);
+            this.forenameLbl.Location = new System.Drawing.Point(427, 112);
             this.forenameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forenameLbl.Name = "forenameLbl";
-            this.forenameLbl.Size = new System.Drawing.Size(124, 29);
+            this.forenameLbl.Size = new System.Drawing.Size(101, 25);
             this.forenameLbl.TabIndex = 6;
             this.forenameLbl.Text = "Forename";
             // 
             // forenameTxt
             // 
-            this.forenameTxt.Location = new System.Drawing.Point(660, 143);
-            this.forenameTxt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.forenameTxt.Location = new System.Drawing.Point(587, 114);
+            this.forenameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.forenameTxt.Name = "forenameTxt";
-            this.forenameTxt.Size = new System.Drawing.Size(298, 26);
+            this.forenameTxt.Size = new System.Drawing.Size(265, 22);
             this.forenameTxt.TabIndex = 5;
             // 
             // surnameLbl
@@ -185,19 +185,19 @@
             this.surnameLbl.AutoSize = true;
             this.surnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surnameLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.surnameLbl.Location = new System.Drawing.Point(492, 203);
+            this.surnameLbl.Location = new System.Drawing.Point(437, 162);
             this.surnameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.surnameLbl.Name = "surnameLbl";
-            this.surnameLbl.Size = new System.Drawing.Size(110, 29);
+            this.surnameLbl.Size = new System.Drawing.Size(92, 25);
             this.surnameLbl.TabIndex = 8;
             this.surnameLbl.Text = "Surname";
             // 
             // surnameTxt
             // 
-            this.surnameTxt.Location = new System.Drawing.Point(660, 203);
-            this.surnameTxt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.surnameTxt.Location = new System.Drawing.Point(587, 162);
+            this.surnameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.surnameTxt.Name = "surnameTxt";
-            this.surnameTxt.Size = new System.Drawing.Size(298, 26);
+            this.surnameTxt.Size = new System.Drawing.Size(265, 22);
             this.surnameTxt.TabIndex = 7;
             // 
             // dobLbl
@@ -205,19 +205,19 @@
             this.dobLbl.AutoSize = true;
             this.dobLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dobLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.dobLbl.Location = new System.Drawing.Point(537, 268);
+            this.dobLbl.Location = new System.Drawing.Point(477, 214);
             this.dobLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dobLbl.Name = "dobLbl";
-            this.dobLbl.Size = new System.Drawing.Size(65, 29);
+            this.dobLbl.Size = new System.Drawing.Size(55, 25);
             this.dobLbl.TabIndex = 10;
             this.dobLbl.Text = "DOB";
             // 
             // dobTP
             // 
-            this.dobTP.Location = new System.Drawing.Point(660, 268);
-            this.dobTP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dobTP.Location = new System.Drawing.Point(587, 214);
+            this.dobTP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dobTP.Name = "dobTP";
-            this.dobTP.Size = new System.Drawing.Size(298, 26);
+            this.dobTP.Size = new System.Drawing.Size(265, 22);
             this.dobTP.TabIndex = 11;
             // 
             // groupIDlbl
@@ -225,20 +225,20 @@
             this.groupIDlbl.AutoSize = true;
             this.groupIDlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupIDlbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.groupIDlbl.Location = new System.Drawing.Point(490, 329);
+            this.groupIDlbl.Location = new System.Drawing.Point(436, 263);
             this.groupIDlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.groupIDlbl.Name = "groupIDlbl";
-            this.groupIDlbl.Size = new System.Drawing.Size(109, 29);
+            this.groupIDlbl.Size = new System.Drawing.Size(90, 25);
             this.groupIDlbl.TabIndex = 13;
             this.groupIDlbl.Text = "Group ID";
             // 
             // groupIDTxt
             // 
-            this.groupIDTxt.Location = new System.Drawing.Point(660, 329);
-            this.groupIDTxt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupIDTxt.Location = new System.Drawing.Point(587, 263);
+            this.groupIDTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupIDTxt.Name = "groupIDTxt";
             this.groupIDTxt.ReadOnly = true;
-            this.groupIDTxt.Size = new System.Drawing.Size(298, 26);
+            this.groupIDTxt.Size = new System.Drawing.Size(265, 22);
             this.groupIDTxt.TabIndex = 12;
             // 
             // genderLbl
@@ -246,10 +246,10 @@
             this.genderLbl.AutoSize = true;
             this.genderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.genderLbl.Location = new System.Drawing.Point(508, 392);
+            this.genderLbl.Location = new System.Drawing.Point(452, 314);
             this.genderLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.genderLbl.Name = "genderLbl";
-            this.genderLbl.Size = new System.Drawing.Size(94, 29);
+            this.genderLbl.Size = new System.Drawing.Size(77, 25);
             this.genderLbl.TabIndex = 15;
             this.genderLbl.Text = "Gender";
             // 
@@ -258,20 +258,20 @@
             this.imageLbl.AutoSize = true;
             this.imageLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imageLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.imageLbl.Location = new System.Drawing.Point(522, 462);
+            this.imageLbl.Location = new System.Drawing.Point(464, 370);
             this.imageLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.imageLbl.Name = "imageLbl";
-            this.imageLbl.Size = new System.Drawing.Size(80, 29);
+            this.imageLbl.Size = new System.Drawing.Size(66, 25);
             this.imageLbl.TabIndex = 17;
             this.imageLbl.Text = "Image";
             // 
             // imgTxt
             // 
-            this.imgTxt.Location = new System.Drawing.Point(660, 462);
-            this.imgTxt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.imgTxt.Location = new System.Drawing.Point(587, 370);
+            this.imgTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.imgTxt.Name = "imgTxt";
             this.imgTxt.ReadOnly = true;
-            this.imgTxt.Size = new System.Drawing.Size(298, 26);
+            this.imgTxt.Size = new System.Drawing.Size(265, 22);
             this.imgTxt.TabIndex = 16;
             // 
             // passwordLbl
@@ -279,20 +279,20 @@
             this.passwordLbl.AutoSize = true;
             this.passwordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.passwordLbl.Location = new System.Drawing.Point(486, 518);
+            this.passwordLbl.Location = new System.Drawing.Point(432, 414);
             this.passwordLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordLbl.Name = "passwordLbl";
-            this.passwordLbl.Size = new System.Drawing.Size(120, 29);
+            this.passwordLbl.Size = new System.Drawing.Size(98, 25);
             this.passwordLbl.TabIndex = 19;
             this.passwordLbl.Text = "Password";
             // 
             // passwordTxt
             // 
-            this.passwordTxt.Location = new System.Drawing.Point(660, 518);
-            this.passwordTxt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.passwordTxt.Location = new System.Drawing.Point(587, 414);
+            this.passwordTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.ReadOnly = true;
-            this.passwordTxt.Size = new System.Drawing.Size(298, 26);
+            this.passwordTxt.Size = new System.Drawing.Size(265, 22);
             this.passwordTxt.TabIndex = 18;
             // 
             // studNumTxt
@@ -300,29 +300,29 @@
             this.studNumTxt.AutoSize = true;
             this.studNumTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studNumTxt.ForeColor = System.Drawing.Color.OrangeRed;
-            this.studNumTxt.Location = new System.Drawing.Point(414, 578);
+            this.studNumTxt.Location = new System.Drawing.Point(368, 462);
             this.studNumTxt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.studNumTxt.Name = "studNumTxt";
-            this.studNumTxt.Size = new System.Drawing.Size(188, 29);
+            this.studNumTxt.Size = new System.Drawing.Size(154, 25);
             this.studNumTxt.TabIndex = 21;
             this.studNumTxt.Text = "Student Number";
             // 
             // stuNumTxt
             // 
-            this.stuNumTxt.Location = new System.Drawing.Point(660, 578);
-            this.stuNumTxt.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.stuNumTxt.Location = new System.Drawing.Point(587, 462);
+            this.stuNumTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stuNumTxt.Name = "stuNumTxt";
             this.stuNumTxt.ReadOnly = true;
-            this.stuNumTxt.Size = new System.Drawing.Size(298, 26);
+            this.stuNumTxt.Size = new System.Drawing.Size(265, 22);
             this.stuNumTxt.TabIndex = 20;
             // 
             // genCBM
             // 
             this.genCBM.FormattingEnabled = true;
-            this.genCBM.Location = new System.Drawing.Point(660, 391);
-            this.genCBM.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.genCBM.Location = new System.Drawing.Point(587, 313);
+            this.genCBM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.genCBM.Name = "genCBM";
-            this.genCBM.Size = new System.Drawing.Size(180, 28);
+            this.genCBM.Size = new System.Drawing.Size(160, 24);
             this.genCBM.TabIndex = 22;
             // 
             // regBtn
@@ -330,10 +330,10 @@
             this.regBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.regBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regBtn.ForeColor = System.Drawing.Color.OrangeRed;
-            this.regBtn.Location = new System.Drawing.Point(702, 672);
-            this.regBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.regBtn.Location = new System.Drawing.Point(624, 538);
+            this.regBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.regBtn.Name = "regBtn";
-            this.regBtn.Size = new System.Drawing.Size(183, 66);
+            this.regBtn.Size = new System.Drawing.Size(163, 53);
             this.regBtn.TabIndex = 23;
             this.regBtn.Text = "Confirm";
             this.regBtn.UseVisualStyleBackColor = false;
@@ -342,20 +342,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.label1.Location = new System.Drawing.Point(214, 42);
+            this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label1.Location = new System.Drawing.Point(190, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(247, 33);
+            this.label1.Size = new System.Drawing.Size(208, 29);
             this.label1.TabIndex = 24;
             this.label1.Text = "Register Student";
             // 
             // RegisterStudentFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1041, 788);
+            this.ClientSize = new System.Drawing.Size(925, 630);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.regBtn);
             this.Controls.Add(this.genCBM);
@@ -378,9 +378,10 @@
             this.Controls.Add(this.menuPnl);
             this.Controls.Add(this.studIDTxt);
             this.Controls.Add(this.menuStrip);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "RegisterStudentFrm";
             this.Text = "Register Student";
+            this.Load += new System.EventHandler(this.RegisterStudentFrm_Load);
             this.menuPnl.ResumeLayout(false);
             this.menuPnl.PerformLayout();
             this.ResumeLayout(false);

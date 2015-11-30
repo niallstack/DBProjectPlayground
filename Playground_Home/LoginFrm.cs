@@ -26,5 +26,20 @@ namespace Playground_Home
         {
 
         }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            /* if ((userNameTxt.Text == "admin") && (passwordTxt.Text == "test123"))
+             {
+                 RegisterStudentFrm nf = new RegisterStudentFrm();
+                 this.Close();
+                 nf.Show();
+             }
+             else
+                 this.Close();*/
+            RegisterStudentFrm nf = new RegisterStudentFrm();
+            this.Hide();
+            nf.Show();
+        }
     }
 }

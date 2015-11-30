@@ -38,9 +38,11 @@
             // menuStrip
             // 
             this.menuStrip.BackColor = System.Drawing.Color.OrangeRed;
+            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(484, 24);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip.Size = new System.Drawing.Size(645, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -49,9 +51,10 @@
             this.userNameTxt.BackColor = System.Drawing.Color.WhiteSmoke;
             this.userNameTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userNameTxt.ForeColor = System.Drawing.Color.OrangeRed;
-            this.userNameTxt.Location = new System.Drawing.Point(154, 124);
+            this.userNameTxt.Location = new System.Drawing.Point(205, 153);
+            this.userNameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.userNameTxt.Name = "userNameTxt";
-            this.userNameTxt.Size = new System.Drawing.Size(179, 31);
+            this.userNameTxt.Size = new System.Drawing.Size(237, 37);
             this.userNameTxt.TabIndex = 3;
             this.userNameTxt.Text = "Username";
             this.userNameTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -61,9 +64,10 @@
             this.passwordTxt.BackColor = System.Drawing.Color.WhiteSmoke;
             this.passwordTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordTxt.ForeColor = System.Drawing.Color.OrangeRed;
-            this.passwordTxt.Location = new System.Drawing.Point(154, 196);
+            this.passwordTxt.Location = new System.Drawing.Point(205, 241);
+            this.passwordTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.passwordTxt.Name = "passwordTxt";
-            this.passwordTxt.Size = new System.Drawing.Size(179, 31);
+            this.passwordTxt.Size = new System.Drawing.Size(237, 37);
             this.passwordTxt.TabIndex = 4;
             this.passwordTxt.Text = "Password";
             this.passwordTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -72,39 +76,43 @@
             // 
             // loginBtn
             // 
-            this.loginBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.loginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.loginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginBtn.ForeColor = System.Drawing.Color.OrangeRed;
-            this.loginBtn.Location = new System.Drawing.Point(176, 301);
+            this.loginBtn.Location = new System.Drawing.Point(235, 370);
+            this.loginBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(122, 43);
+            this.loginBtn.Size = new System.Drawing.Size(163, 53);
             this.loginBtn.TabIndex = 5;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // forgotPasswordLbl
             // 
             this.forgotPasswordLbl.AutoSize = true;
             this.forgotPasswordLbl.LinkColor = System.Drawing.Color.WhiteSmoke;
-            this.forgotPasswordLbl.Location = new System.Drawing.Point(154, 233);
+            this.forgotPasswordLbl.Location = new System.Drawing.Point(205, 287);
+            this.forgotPasswordLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.forgotPasswordLbl.Name = "forgotPasswordLbl";
-            this.forgotPasswordLbl.Size = new System.Drawing.Size(92, 13);
+            this.forgotPasswordLbl.Size = new System.Drawing.Size(122, 17);
             this.forgotPasswordLbl.TabIndex = 6;
             this.forgotPasswordLbl.TabStop = true;
             this.forgotPasswordLbl.Text = "Forgot Password?";
             // 
             // Playground_frm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(484, 462);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(645, 569);
             this.Controls.Add(this.forgotPasswordLbl);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.userNameTxt);
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Playground_frm";
             this.Text = "Playground";
             this.Load += new System.EventHandler(this.Playground_frm_Load);

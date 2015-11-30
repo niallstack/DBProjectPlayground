@@ -47,5 +47,10 @@ namespace Playground_Home
             this.Close();
             nf.Show();
         }
+
+        private void RegisterStudentFrm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
