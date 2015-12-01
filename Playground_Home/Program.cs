@@ -5,9 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Playground_Home
-{
-    static class Program {
-      
+{    
     static class Program
     {
         /// <summary>
