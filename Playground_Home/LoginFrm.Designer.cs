@@ -121,6 +121,7 @@
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.userNameTxt);
             this.Controls.Add(this.menuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip;
             this.Name = "Playground_frm";
             this.Text = "Playground";

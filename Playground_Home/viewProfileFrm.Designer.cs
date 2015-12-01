@@ -385,6 +385,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "viewProfileFrm";
             this.Text = "Profile";
             this.Load += new System.EventHandler(this.viewProfileFrm_Load);

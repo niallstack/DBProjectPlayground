@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SchoolMessageFrm));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label2 = new System.Windows.Forms.Label();
@@ -110,6 +111,7 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.menuStrip);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SchoolMessageFrm";
             this.Text = "SchoolMessageFrm";
             this.ResumeLayout(false);

@@ -122,6 +122,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.menuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "PrivateMessageFrm";
             this.Text = "PrivateMessageFrm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
