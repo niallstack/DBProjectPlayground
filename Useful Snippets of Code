@@ -1,0 +1,4 @@
+Fill label from database:
+dataRow dr = data.Rows[0];
+labReg1.Text = dr["Region1"].ToString();
+labReg2.Text = dr["Southern"].ToString();
