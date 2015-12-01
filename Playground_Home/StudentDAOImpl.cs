@@ -17,8 +17,8 @@ namespace Playground_Home
             return "Data Source=cp3dbinstance.c4pxnpz4ojk8.us-east-1.rds.amazonaws.com:1521/cp3db;" + "User ID=" + username + ";Password=" + password;
         }
 
-        public StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, 
-                                  int classID, string gender, Byte[] image, string studentPassword, string studentNumber, string status)
+        public StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, int groupID,
+                           string gender, Byte[] pictureCol, string password, string studentNumber, string status)
         {
             //throw new NotImplementedException();
             try
@@ -40,13 +40,13 @@ namespace Playground_Home
 
                     OracleCommand command = connection.CreateCommand();
 
-                    string sql = "INSERT INTO Students (StudentID, Forename, Surname, DOB, SchoolID, ClassID, Gender, Image, StudentPassword, StudentNumber, Status) VALUES (" + studentID + ",'" + sNameTxt.Text +
-                "','" + fNameTxt.Text + "','" + dateTimeACust.Text + "','" + emailTxt.Text + "','" + mobTxt.Text + "')";
+                    string sql = "INSERT INTO Students (studentID, forename, surname, dob, schoolID, groupID, gender, pictureCol, password, studentNumber, status) VALUES (" + studentID + ",'" + forename +
+                "','" + surname + "','" + dob + "'," + schoolID + "," + groupID + ",'" + gender + "'," + pictureCol + ",'" + password + "'," + studentNumber + ",'" + status + "')";
 
                     command.CommandText = sql;
 
                     command.ExecuteNonQuery();
-                    StudentImpl student = new StudentImpl(studentID, forename, surname, dob, schoolID, classID, gender, image, studentPassword, studentNumber, status);
+                    StudentImpl student = new StudentImpl(studentID, forename, surname, dob, schoolID, groupID, gender, pictureCol, password, studentNumber, status);
 
                 }
             }
