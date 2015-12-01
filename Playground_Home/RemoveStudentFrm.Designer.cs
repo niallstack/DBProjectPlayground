@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RemoveStudentFrm));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.menuPnl = new System.Windows.Forms.Panel();
             this.logoutBtn = new System.Windows.Forms.Button();
@@ -54,8 +55,7 @@
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(925, 24);
+            this.menuStrip.Size = new System.Drawing.Size(694, 24);
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip";
             this.menuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip_ItemClicked);
@@ -67,10 +67,9 @@
             this.menuPnl.Controls.Add(this.editStuLinkLbl);
             this.menuPnl.Controls.Add(this.delStuLinkLbl);
             this.menuPnl.Controls.Add(this.regStuLinkLbl);
-            this.menuPnl.Location = new System.Drawing.Point(0, 33);
-            this.menuPnl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuPnl.Location = new System.Drawing.Point(0, 27);
             this.menuPnl.Name = "menuPnl";
-            this.menuPnl.Size = new System.Drawing.Size(183, 594);
+            this.menuPnl.Size = new System.Drawing.Size(137, 483);
             this.menuPnl.TabIndex = 4;
             this.menuPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.menuPnl_Paint);
             // 
@@ -79,10 +78,9 @@
             this.logoutBtn.BackColor = System.Drawing.Color.OrangeRed;
             this.logoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.logoutBtn.Location = new System.Drawing.Point(8, 529);
-            this.logoutBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logoutBtn.Location = new System.Drawing.Point(6, 430);
             this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(163, 53);
+            this.logoutBtn.Size = new System.Drawing.Size(122, 43);
             this.logoutBtn.TabIndex = 24;
             this.logoutBtn.Text = "Log Out";
             this.logoutBtn.UseVisualStyleBackColor = false;
@@ -93,10 +91,9 @@
             this.editStuLinkLbl.AutoSize = true;
             this.editStuLinkLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.editStuLinkLbl.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.editStuLinkLbl.Location = new System.Drawing.Point(4, 128);
-            this.editStuLinkLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.editStuLinkLbl.Location = new System.Drawing.Point(3, 104);
             this.editStuLinkLbl.Name = "editStuLinkLbl";
-            this.editStuLinkLbl.Size = new System.Drawing.Size(111, 24);
+            this.editStuLinkLbl.Size = new System.Drawing.Size(87, 18);
             this.editStuLinkLbl.TabIndex = 2;
             this.editStuLinkLbl.TabStop = true;
             this.editStuLinkLbl.Text = "Edit Student";
@@ -107,10 +104,9 @@
             this.delStuLinkLbl.AutoSize = true;
             this.delStuLinkLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delStuLinkLbl.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.delStuLinkLbl.Location = new System.Drawing.Point(4, 79);
-            this.delStuLinkLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.delStuLinkLbl.Location = new System.Drawing.Point(3, 64);
             this.delStuLinkLbl.Name = "delStuLinkLbl";
-            this.delStuLinkLbl.Size = new System.Drawing.Size(150, 24);
+            this.delStuLinkLbl.Size = new System.Drawing.Size(118, 18);
             this.delStuLinkLbl.TabIndex = 1;
             this.delStuLinkLbl.TabStop = true;
             this.delStuLinkLbl.Text = "Remove Student";
@@ -121,10 +117,9 @@
             this.regStuLinkLbl.AutoSize = true;
             this.regStuLinkLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regStuLinkLbl.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.regStuLinkLbl.Location = new System.Drawing.Point(4, 28);
-            this.regStuLinkLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.regStuLinkLbl.Location = new System.Drawing.Point(3, 23);
             this.regStuLinkLbl.Name = "regStuLinkLbl";
-            this.regStuLinkLbl.Size = new System.Drawing.Size(148, 24);
+            this.regStuLinkLbl.Size = new System.Drawing.Size(117, 18);
             this.regStuLinkLbl.TabIndex = 0;
             this.regStuLinkLbl.TabStop = true;
             this.regStuLinkLbl.Text = "Register Student";
@@ -135,10 +130,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(191, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(143, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 29);
+            this.label1.Size = new System.Drawing.Size(164, 24);
             this.label1.TabIndex = 25;
             this.label1.Text = "Remove Student";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -146,19 +140,17 @@
             // studGrd
             // 
             this.studGrd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.studGrd.Location = new System.Drawing.Point(223, 112);
-            this.studGrd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.studGrd.Location = new System.Drawing.Point(167, 91);
             this.studGrd.Name = "studGrd";
-            this.studGrd.Size = new System.Drawing.Size(668, 239);
+            this.studGrd.Size = new System.Drawing.Size(501, 194);
             this.studGrd.TabIndex = 26;
             this.studGrd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.studGrd_CellContentClick);
             // 
             // studIDBtn
             // 
-            this.studIDBtn.Location = new System.Drawing.Point(324, 358);
-            this.studIDBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.studIDBtn.Location = new System.Drawing.Point(243, 291);
             this.studIDBtn.Name = "studIDBtn";
-            this.studIDBtn.Size = new System.Drawing.Size(100, 28);
+            this.studIDBtn.Size = new System.Drawing.Size(75, 23);
             this.studIDBtn.TabIndex = 27;
             this.studIDBtn.Text = "Student ID";
             this.studIDBtn.UseVisualStyleBackColor = true;
@@ -166,10 +158,9 @@
             // 
             // surnameBtn
             // 
-            this.surnameBtn.Location = new System.Drawing.Point(444, 358);
-            this.surnameBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.surnameBtn.Location = new System.Drawing.Point(333, 291);
             this.surnameBtn.Name = "surnameBtn";
-            this.surnameBtn.Size = new System.Drawing.Size(100, 28);
+            this.surnameBtn.Size = new System.Drawing.Size(75, 23);
             this.surnameBtn.TabIndex = 28;
             this.surnameBtn.Text = "Surname";
             this.surnameBtn.UseVisualStyleBackColor = true;
@@ -180,20 +171,18 @@
             this.sortLbl.AutoSize = true;
             this.sortLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.sortLbl.Location = new System.Drawing.Point(219, 364);
-            this.sortLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sortLbl.Location = new System.Drawing.Point(164, 296);
             this.sortLbl.Name = "sortLbl";
-            this.sortLbl.Size = new System.Drawing.Size(74, 24);
+            this.sortLbl.Size = new System.Drawing.Size(61, 18);
             this.sortLbl.TabIndex = 29;
             this.sortLbl.Text = "Sort By:";
             this.sortLbl.Click += new System.EventHandler(this.sortLbl_Click);
             // 
             // grpBtn
             // 
-            this.grpBtn.Location = new System.Drawing.Point(567, 358);
-            this.grpBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.grpBtn.Location = new System.Drawing.Point(425, 291);
             this.grpBtn.Name = "grpBtn";
-            this.grpBtn.Size = new System.Drawing.Size(100, 28);
+            this.grpBtn.Size = new System.Drawing.Size(75, 23);
             this.grpBtn.TabIndex = 30;
             this.grpBtn.Text = "Group ID";
             this.grpBtn.UseVisualStyleBackColor = true;
@@ -201,10 +190,9 @@
             // 
             // studnumBtn
             // 
-            this.studnumBtn.Location = new System.Drawing.Point(691, 358);
-            this.studnumBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.studnumBtn.Location = new System.Drawing.Point(518, 291);
             this.studnumBtn.Name = "studnumBtn";
-            this.studnumBtn.Size = new System.Drawing.Size(100, 28);
+            this.studnumBtn.Size = new System.Drawing.Size(75, 23);
             this.studnumBtn.TabIndex = 31;
             this.studnumBtn.Text = "Student No.";
             this.studnumBtn.UseVisualStyleBackColor = true;
@@ -215,20 +203,18 @@
             this.stuIDLbl.AutoSize = true;
             this.stuIDLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stuIDLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.stuIDLbl.Location = new System.Drawing.Point(293, 443);
-            this.stuIDLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.stuIDLbl.Location = new System.Drawing.Point(220, 360);
             this.stuIDLbl.Name = "stuIDLbl";
-            this.stuIDLbl.Size = new System.Drawing.Size(104, 25);
+            this.stuIDLbl.Size = new System.Drawing.Size(87, 20);
             this.stuIDLbl.TabIndex = 33;
             this.stuIDLbl.Text = "Student ID";
             // 
             // studIDTxt
             // 
-            this.studIDTxt.Location = new System.Drawing.Point(460, 443);
-            this.studIDTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.studIDTxt.Location = new System.Drawing.Point(345, 360);
             this.studIDTxt.Name = "studIDTxt";
             this.studIDTxt.ReadOnly = true;
-            this.studIDTxt.Size = new System.Drawing.Size(265, 22);
+            this.studIDTxt.Size = new System.Drawing.Size(200, 20);
             this.studIDTxt.TabIndex = 32;
             // 
             // delBtn
@@ -236,20 +222,19 @@
             this.delBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.delBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delBtn.ForeColor = System.Drawing.Color.OrangeRed;
-            this.delBtn.Location = new System.Drawing.Point(504, 516);
-            this.delBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.delBtn.Location = new System.Drawing.Point(378, 419);
             this.delBtn.Name = "delBtn";
-            this.delBtn.Size = new System.Drawing.Size(163, 53);
+            this.delBtn.Size = new System.Drawing.Size(122, 43);
             this.delBtn.TabIndex = 34;
             this.delBtn.Text = "Remove";
             this.delBtn.UseVisualStyleBackColor = false;
             // 
             // RemoveStudentFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(925, 630);
+            this.ClientSize = new System.Drawing.Size(694, 512);
             this.Controls.Add(this.delBtn);
             this.Controls.Add(this.stuIDLbl);
             this.Controls.Add(this.studIDTxt);
@@ -263,9 +248,9 @@
             this.Controls.Add(this.menuPnl);
             this.Controls.Add(this.menuStrip);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RemoveStudentFrm";
-            this.Text = "RemoveStudentFrm";
+            this.Text = "Remove Student";
             this.Load += new System.EventHandler(this.RemoveStudentFrm_Load);
             this.menuPnl.ResumeLayout(false);
             this.menuPnl.PerformLayout();

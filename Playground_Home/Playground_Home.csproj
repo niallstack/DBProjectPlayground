@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassGroupMessageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassGroupMessageFrm.Designer.cs">
+      <DependentUpon>ClassGroupMessageFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditStudentFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,12 @@
     </Compile>
     <Compile Include="LoginFrm.Designer.cs">
       <DependentUpon>LoginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrivateMessageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrivateMessageFrm.Designer.cs">
+      <DependentUpon>PrivateMessageFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,11 +101,17 @@
     <Compile Include="viewProfileFrm.Designer.cs">
       <DependentUpon>viewProfileFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClassGroupMessageFrm.resx">
+      <DependentUpon>ClassGroupMessageFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditStudentFrm.resx">
       <DependentUpon>EditStudentFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginFrm.resx">
       <DependentUpon>LoginFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrivateMessageFrm.resx">
+      <DependentUpon>PrivateMessageFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
