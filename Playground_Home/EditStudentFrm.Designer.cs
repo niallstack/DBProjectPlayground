@@ -420,7 +420,7 @@
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditStudentFrm";
-            this.Text = "EditStudentFrm";
+            this.Text = "Edit Student";
             this.Load += new System.EventHandler(this.EditStudentFrm_Load);
             this.menuPnl.ResumeLayout(false);
             this.menuPnl.PerformLayout();

@@ -250,7 +250,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RemoveStudentFrm";
-            this.Text = "RemoveStudentFrm";
+            this.Text = "Remove Student";
             this.Load += new System.EventHandler(this.RemoveStudentFrm_Load);
             this.menuPnl.ResumeLayout(false);
             this.menuPnl.PerformLayout();

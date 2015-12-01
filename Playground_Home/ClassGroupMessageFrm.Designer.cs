@@ -116,7 +116,7 @@
             this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ClassGroupMessageFrm";
-            this.Text = "ClassGroupMessageFrm";
+            this.Text = "Class Group Wall";
             this.Load += new System.EventHandler(this.ClassGroupMessageFrm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
