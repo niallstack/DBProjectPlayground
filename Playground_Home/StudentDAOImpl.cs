@@ -18,9 +18,43 @@ namespace Playground_Home
         }
 
         public StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, 
-                                  int groupID, string gender, int pictureCol, string password, string studentNumber, string status)
+                                  int classID, string gender, Byte[] image, string studentPassword, string studentNumber, string status)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            try
+            {
+
+
+                if (studentID == null)
+                {
+                    throw new ArgumentNullException("Student ID");
+                }
+
+
+                string connectionString = GetConnectionString("sw4", "sw4");
+                using (OracleConnection connection = new OracleConnection())
+                {
+                    connection.ConnectionString = connectionString;
+
+                    connection.Open();
+
+                    OracleCommand command = connection.CreateCommand();
+
+                    string sql = "INSERT INTO Students (StudentID, Forename, Surname, DOB, SchoolID, ClassID, Gender, Image, StudentPassword, StudentNumber, Status) VALUES (" + studentID + ",'" + sNameTxt.Text +
+                "','" + fNameTxt.Text + "','" + dateTimeACust.Text + "','" + emailTxt.Text + "','" + mobTxt.Text + "')";
+
+                    command.CommandText = sql;
+
+                    command.ExecuteNonQuery();
+                    StudentImpl student = new StudentImpl(studentID, forename, surname, dob, schoolID, classID, gender, image, studentPassword, studentNumber, status);
+
+                }
+            }
+            catch (NotImplementedException e)
+            {
+
+            }
+
         }
 
 
