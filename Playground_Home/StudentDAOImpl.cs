@@ -14,7 +14,7 @@ namespace Playground_Home
             // To avoid storing the connection string in your code, 
             // you can retrieve it from a configuration file.
             // make sure to add your username and password here fgfg
-            return "Data Source=cp3dbinstance.c4pxnpz4ojk8.us-east-1.rds.amazonaws.com;" + "User ID=" + username + ";Password=" + password;
+            return "Data Source=cp3dbinstance.c4pxnpz4ojk8.us-east-1.rds.amazonaws.com:1521/cp3db;" + "User ID=" + username + ";Password=" + password;
         }
 
         public StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, 
@@ -66,14 +66,14 @@ namespace Playground_Home
 
 
 
-
+        //Author: Aleksandar Zoric
         public StudentImpl read(int studentID)
         {
- 
 
+           
             try {
+                StudentImpl student;
 
-                
                 if (studentID == null)
                 {
                     throw new ArgumentNullException("Student ID");
@@ -81,7 +81,6 @@ namespace Playground_Home
                 
 
                 string connectionString = GetConnectionString("sw4", "sw4");
-                StudentImpl student;
                 using (OracleConnection connection = new OracleConnection())
                 {
                     connection.ConnectionString = connectionString;
@@ -90,7 +89,7 @@ namespace Playground_Home
 
                     OracleCommand command = connection.CreateCommand();
 
-                    string sql = "SELECT * FROM Students WHERE StudentID = ?";
+                    string sql = "SELECT * FROM Students WHERE StudentID = " + studentID;
 
                     command.CommandText = sql;
 
@@ -99,41 +98,39 @@ namespace Playground_Home
 
                     reader.Read();
 
-                    Int32 studentid = (Int32)reader["studentID"];
+                    Int32 studentid = Convert.ToInt32(reader["studentID"]);
                     String forename = (string)reader["forename"];
                     String surname = (string)reader["surname"];
-                    String dob = (string)reader["dob"];
-                    Int32 schoolD = (Int32)reader["schoolID"];
-                    Int32 classID = (Int32)reader["classID"];
+                    String dob = (string)reader["dob"].ToString();
+                    Int32 schoolD = Convert.ToInt32(reader["schoolID"]);
+                    Int32 classID = Convert.ToInt32(reader["classID"]);
                     String gender = (string)reader["gender"];
-                    Byte[] image = (Byte[])reader["image"];
+                    Byte[] image = null;
+                    if (!Convert.IsDBNull(reader["image"]))
+                    {
+                        image = (Byte[])reader["image"];
+                    }
                     String studentPassword = (string)reader["studentpassword"];
-                    String studentnumber = (string)reader["studentnumber"];
-                    String status = (string)reader["status"];
+                    String studentnumber = (string)reader["studentnumber"].ToString();
+                    String status = (string)reader["status"].ToString();
 
-                     student = new StudentImpl(studentid, forename, surname, dob, schoolD, classID, gender, image, studentPassword, studentnumber, status);
+                     student = new StudentImpl(studentid, forename, surname, dob, schoolD, classID, gender, image,studentPassword, studentnumber, status);
 
-                   
-
-                    OracleParameter para = new OracleParameter("?", OracleType.Int32);
-                    para.Value = studentID;
-
-                    command.Parameters.Add(para);
-                    command.Prepare();
                     command.ExecuteNonQuery();
 
-                
-
                     connection.Close();
+                    return student;
 
                 }
-                return student;
+               
 
             }
             catch(NotImplementedException e)
             {
-                
+                return null;
             }
+          
+
         }
 
 
