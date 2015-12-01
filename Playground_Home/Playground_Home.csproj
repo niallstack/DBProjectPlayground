@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassGroupMessageFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassGroupMessageFrm.Designer.cs">
+      <DependentUpon>ClassGroupMessageFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="EditStudentFrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     <Compile Include="viewProfileFrm.Designer.cs">
       <DependentUpon>viewProfileFrm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClassGroupMessageFrm.resx">
+      <DependentUpon>ClassGroupMessageFrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EditStudentFrm.resx">
       <DependentUpon>EditStudentFrm.cs</DependentUpon>
     </EmbeddedResource>
