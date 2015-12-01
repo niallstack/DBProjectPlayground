@@ -91,7 +91,7 @@
             // 
             this.forgotPasswordLbl.AutoSize = true;
             this.forgotPasswordLbl.LinkColor = System.Drawing.Color.WhiteSmoke;
-            this.forgotPasswordLbl.Location = new System.Drawing.Point(145, 295);
+            this.forgotPasswordLbl.Location = new System.Drawing.Point(164, 292);
             this.forgotPasswordLbl.Name = "forgotPasswordLbl";
             this.forgotPasswordLbl.Size = new System.Drawing.Size(92, 13);
             this.forgotPasswordLbl.TabIndex = 6;
