@@ -17,13 +17,14 @@ namespace Playground_Home
             return "Data Source=cp3dbinstance.c4pxnpz4ojk8.us-east-1.rds.amazonaws.com:1521/cp3db;" + "User ID=" + username + ";Password=" + password;
         }
 
+        //Author: Niall Stack - t00174406
         public StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, int groupID,
                            string gender, Byte[] pictureCol, string password, string studentNumber, string status)
         {
             //throw new NotImplementedException();
             try
             {
-
+                StudentImpl student;
 
                 if (studentID == null)
                 {
@@ -46,14 +47,16 @@ namespace Playground_Home
                     command.CommandText = sql;
 
                     command.ExecuteNonQuery();
-                    StudentImpl student = new StudentImpl(studentID, forename, surname, dob, schoolID, groupID, gender, pictureCol, password, studentNumber, status);
+                    student = new StudentImpl(studentID, forename, surname, dob, schoolID, groupID, gender, pictureCol, password, studentNumber, status);                
 
+                    connection.Close();
                 }
             }
             catch (NotImplementedException e)
             {
-
+                return null;
             }
+            return null;
 
         }
 
