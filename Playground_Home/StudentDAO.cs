@@ -9,7 +9,7 @@ namespace Playground_Home
     interface StudentDAO
     {
         StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, int groupID,
-                           string gender, int pictureCol, string password, string studentNumber,string status);
+                           string gender, Byte[] pictureCol, string password, string studentNumber,string status);
 
         void delete(int studentID);
 

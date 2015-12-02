@@ -21,10 +21,11 @@ namespace Playground_Home
         public StudentImpl create(int studentID, string forename, string surname, string dob, int schoolID, int groupID,
                            string gender, Byte[] pictureCol, string password, string studentNumber, string status)
         {
+            StudentImpl student;
             //throw new NotImplementedException();
             try
             {
-                StudentImpl student;
+                
 
                 if (studentID == null)
                 {
@@ -56,7 +57,7 @@ namespace Playground_Home
             {
                 return null;
             }
-            return null;
+            return student;
 
         }
 
