@@ -64,7 +64,27 @@ namespace Playground_Home
 
         public void delete(int studentID)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            try
+            {
+                string connectionString = GetConnectionString("sw4", "sw4");
+                using (OracleConnection connection = new OracleConnection())
+                {
+                    connection.ConnectionString = connectionString;
+
+                    connection.Open();
+
+                    OracleCommand command = connection.CreateCommand();
+
+                    string sql = "UPDATE status SET status ='i' WHERE StudentID = " + studentID;
+
+                    command.CommandText = sql;
+                    command.ExecuteNonQuery();
+                    connection.Close();
+
+                }
+            }
+            catch { }
         }
 
 
