@@ -21,73 +21,21 @@ namespace Playground_Home
 
         {
             StudentDAOImpl student = new StudentDAOImpl();
-            
-            forenameVal.Text = student.read(1).getForename();
-            surnameVal.Text = student.read(1).getSurname();
-            dobVal.Text = student.read(1).getDOB();
-            genderVal.Text = student.read(1).getGender();
 
+            Playground_frm loginForm = new Playground_frm();
 
-        }
+            int loggedStudentID;
+            loggedStudentID = loginForm.returnStudentID();
 
-        private void forenameLbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void forenameVal_Click(object sender, EventArgs e)
-        {
+            forenameVal.Text = student.read(loggedStudentID).getForename();
+            surnameVal.Text = student.read(loggedStudentID).getSurname();
+            dobVal.Text = student.read(loggedStudentID).getDOB();
+            genderVal.Text = student.read(loggedStudentID).getGender();
+            studentNumVal.Text = student.read(loggedStudentID).getStudentNumber();
 
         }
 
-        private void surnameVal_Click(object sender, EventArgs e)
-        {
 
-        }
 
-        private void surnameLbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

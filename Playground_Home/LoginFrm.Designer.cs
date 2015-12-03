@@ -34,8 +34,8 @@
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.loginBtn = new System.Windows.Forms.Button();
             this.forgotPasswordLbl = new System.Windows.Forms.LinkLabel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.logoImg = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.logoImg)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip
@@ -98,16 +98,16 @@
             this.forgotPasswordLbl.TabStop = true;
             this.forgotPasswordLbl.Text = "Forgot Password?";
             // 
-            // pictureBox2
+            // logoImg
             // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(148, 47);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(175, 110);
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.logoImg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logoImg.BackgroundImage")));
+            this.logoImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.logoImg.Location = new System.Drawing.Point(148, 47);
+            this.logoImg.Margin = new System.Windows.Forms.Padding(2);
+            this.logoImg.Name = "logoImg";
+            this.logoImg.Size = new System.Drawing.Size(175, 110);
+            this.logoImg.TabIndex = 7;
+            this.logoImg.TabStop = false;
             // 
             // Playground_frm
             // 
@@ -115,7 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(484, 462);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.logoImg);
             this.Controls.Add(this.forgotPasswordLbl);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.passwordTxt);
@@ -126,7 +126,7 @@
             this.Name = "Playground_frm";
             this.Text = "Playground";
             this.Load += new System.EventHandler(this.Playground_frm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -139,7 +139,7 @@
         private System.Windows.Forms.TextBox passwordTxt;
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.LinkLabel forgotPasswordLbl;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox logoImg;
     }
 }
 

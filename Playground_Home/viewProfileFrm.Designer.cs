@@ -35,22 +35,24 @@
             this.aboutGrp = new System.Windows.Forms.GroupBox();
             this.surnameLbl = new System.Windows.Forms.Label();
             this.surnameVal = new System.Windows.Forms.Label();
-            this.aboutLbl = new System.Windows.Forms.Label();
             this.genderVal = new System.Windows.Forms.Label();
             this.genderLbl = new System.Windows.Forms.Label();
             this.dobVal = new System.Windows.Forms.Label();
             this.dobLbl = new System.Windows.Forms.Label();
             this.forenameLbl = new System.Windows.Forms.Label();
             this.forenameVal = new System.Windows.Forms.Label();
+            this.aboutLbl = new System.Windows.Forms.Label();
             this.interestGrp = new System.Windows.Forms.GroupBox();
+            this.interestGrd = new System.Windows.Forms.DataGridView();
             this.interestLbl = new System.Windows.Forms.Label();
             this.friendsLbl = new System.Windows.Forms.Label();
             this.profileLbl = new System.Windows.Forms.Label();
             this.addBtn = new System.Windows.Forms.Button();
             this.chatBtn = new System.Windows.Forms.Button();
-            this.interestGrd = new System.Windows.Forms.DataGridView();
             this.friendsGrp = new System.Windows.Forms.GroupBox();
             this.friendsGrd = new System.Windows.Forms.DataGridView();
+            this.studentNumLbl = new System.Windows.Forms.Label();
+            this.studentNumVal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.profileImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoImg)).BeginInit();
             this.aboutGrp.SuspendLayout();
@@ -94,6 +96,8 @@
             // 
             // aboutGrp
             // 
+            this.aboutGrp.Controls.Add(this.studentNumLbl);
+            this.aboutGrp.Controls.Add(this.studentNumVal);
             this.aboutGrp.Controls.Add(this.surnameLbl);
             this.aboutGrp.Controls.Add(this.surnameVal);
             this.aboutGrp.Controls.Add(this.genderVal);
@@ -115,26 +119,96 @@
             this.surnameLbl.AutoSize = true;
             this.surnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surnameLbl.ForeColor = System.Drawing.Color.Coral;
-            this.surnameLbl.Location = new System.Drawing.Point(11, 86);
+            this.surnameLbl.Location = new System.Drawing.Point(11, 99);
             this.surnameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.surnameLbl.Name = "surnameLbl";
             this.surnameLbl.Size = new System.Drawing.Size(78, 20);
             this.surnameLbl.TabIndex = 22;
             this.surnameLbl.Text = "Surname:";
-            this.surnameLbl.Click += new System.EventHandler(this.surnameLbl_Click);
             // 
             // surnameVal
             // 
             this.surnameVal.AutoSize = true;
             this.surnameVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.surnameVal.ForeColor = System.Drawing.Color.OrangeRed;
-            this.surnameVal.Location = new System.Drawing.Point(115, 86);
+            this.surnameVal.Location = new System.Drawing.Point(115, 99);
             this.surnameVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.surnameVal.Name = "surnameVal";
             this.surnameVal.Size = new System.Drawing.Size(53, 20);
             this.surnameVal.TabIndex = 21;
             this.surnameVal.Text = "Gates";
-            this.surnameVal.Click += new System.EventHandler(this.surnameVal_Click);
+            // 
+            // genderVal
+            // 
+            this.genderVal.AutoSize = true;
+            this.genderVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderVal.ForeColor = System.Drawing.Color.OrangeRed;
+            this.genderVal.Location = new System.Drawing.Point(115, 155);
+            this.genderVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.genderVal.Name = "genderVal";
+            this.genderVal.Size = new System.Drawing.Size(22, 20);
+            this.genderVal.TabIndex = 17;
+            this.genderVal.Text = "M";
+            // 
+            // genderLbl
+            // 
+            this.genderLbl.AutoSize = true;
+            this.genderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderLbl.ForeColor = System.Drawing.Color.Coral;
+            this.genderLbl.Location = new System.Drawing.Point(11, 155);
+            this.genderLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.genderLbl.Name = "genderLbl";
+            this.genderLbl.Size = new System.Drawing.Size(67, 20);
+            this.genderLbl.TabIndex = 16;
+            this.genderLbl.Text = "Gender:";
+            // 
+            // dobVal
+            // 
+            this.dobVal.AutoSize = true;
+            this.dobVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dobVal.ForeColor = System.Drawing.Color.OrangeRed;
+            this.dobVal.Location = new System.Drawing.Point(115, 126);
+            this.dobVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.dobVal.Name = "dobVal";
+            this.dobVal.Size = new System.Drawing.Size(82, 20);
+            this.dobVal.TabIndex = 15;
+            this.dobVal.Text = "23-Nov-92\r\n";
+            // 
+            // dobLbl
+            // 
+            this.dobLbl.AutoSize = true;
+            this.dobLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dobLbl.ForeColor = System.Drawing.Color.Coral;
+            this.dobLbl.Location = new System.Drawing.Point(11, 126);
+            this.dobLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.dobLbl.Name = "dobLbl";
+            this.dobLbl.Size = new System.Drawing.Size(103, 20);
+            this.dobLbl.TabIndex = 14;
+            this.dobLbl.Text = "Date of Birth:";
+            // 
+            // forenameLbl
+            // 
+            this.forenameLbl.AutoSize = true;
+            this.forenameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forenameLbl.ForeColor = System.Drawing.Color.Coral;
+            this.forenameLbl.Location = new System.Drawing.Point(11, 72);
+            this.forenameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.forenameLbl.Name = "forenameLbl";
+            this.forenameLbl.Size = new System.Drawing.Size(86, 20);
+            this.forenameLbl.TabIndex = 13;
+            this.forenameLbl.Text = "Forename:";
+            // 
+            // forenameVal
+            // 
+            this.forenameVal.AutoSize = true;
+            this.forenameVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.forenameVal.ForeColor = System.Drawing.Color.OrangeRed;
+            this.forenameVal.Location = new System.Drawing.Point(115, 72);
+            this.forenameVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.forenameVal.Name = "forenameVal";
+            this.forenameVal.Size = new System.Drawing.Size(29, 20);
+            this.forenameVal.TabIndex = 12;
+            this.forenameVal.Text = "Bill";
             // 
             // aboutLbl
             // 
@@ -148,80 +222,6 @@
             this.aboutLbl.TabIndex = 20;
             this.aboutLbl.Text = "About";
             // 
-            // genderVal
-            // 
-            this.genderVal.AutoSize = true;
-            this.genderVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderVal.ForeColor = System.Drawing.Color.OrangeRed;
-            this.genderVal.Location = new System.Drawing.Point(115, 142);
-            this.genderVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.genderVal.Name = "genderVal";
-            this.genderVal.Size = new System.Drawing.Size(70, 20);
-            this.genderVal.TabIndex = 17;
-            this.genderVal.Text = "6th Year";
-            // 
-            // genderLbl
-            // 
-            this.genderLbl.AutoSize = true;
-            this.genderLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderLbl.ForeColor = System.Drawing.Color.Coral;
-            this.genderLbl.Location = new System.Drawing.Point(11, 142);
-            this.genderLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.genderLbl.Name = "genderLbl";
-            this.genderLbl.Size = new System.Drawing.Size(67, 20);
-            this.genderLbl.TabIndex = 16;
-            this.genderLbl.Text = "Gender:";
-            // 
-            // dobVal
-            // 
-            this.dobVal.AutoSize = true;
-            this.dobVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dobVal.ForeColor = System.Drawing.Color.OrangeRed;
-            this.dobVal.Location = new System.Drawing.Point(115, 113);
-            this.dobVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.dobVal.Name = "dobVal";
-            this.dobVal.Size = new System.Drawing.Size(27, 20);
-            this.dobVal.TabIndex = 15;
-            this.dobVal.Text = "60";
-            // 
-            // dobLbl
-            // 
-            this.dobLbl.AutoSize = true;
-            this.dobLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dobLbl.ForeColor = System.Drawing.Color.Coral;
-            this.dobLbl.Location = new System.Drawing.Point(11, 113);
-            this.dobLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.dobLbl.Name = "dobLbl";
-            this.dobLbl.Size = new System.Drawing.Size(103, 20);
-            this.dobLbl.TabIndex = 14;
-            this.dobLbl.Text = "Date of Birth:";
-            // 
-            // forenameLbl
-            // 
-            this.forenameLbl.AutoSize = true;
-            this.forenameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forenameLbl.ForeColor = System.Drawing.Color.Coral;
-            this.forenameLbl.Location = new System.Drawing.Point(11, 59);
-            this.forenameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.forenameLbl.Name = "forenameLbl";
-            this.forenameLbl.Size = new System.Drawing.Size(86, 20);
-            this.forenameLbl.TabIndex = 13;
-            this.forenameLbl.Text = "Forename:";
-            this.forenameLbl.Click += new System.EventHandler(this.forenameLbl_Click);
-            // 
-            // forenameVal
-            // 
-            this.forenameVal.AutoSize = true;
-            this.forenameVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forenameVal.ForeColor = System.Drawing.Color.OrangeRed;
-            this.forenameVal.Location = new System.Drawing.Point(115, 59);
-            this.forenameVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.forenameVal.Name = "forenameVal";
-            this.forenameVal.Size = new System.Drawing.Size(29, 20);
-            this.forenameVal.TabIndex = 12;
-            this.forenameVal.Text = "Bill";
-            this.forenameVal.Click += new System.EventHandler(this.forenameVal_Click);
-            // 
             // interestGrp
             // 
             this.interestGrp.Controls.Add(this.interestGrd);
@@ -232,7 +232,14 @@
             this.interestGrp.Size = new System.Drawing.Size(179, 230);
             this.interestGrp.TabIndex = 13;
             this.interestGrp.TabStop = false;
-            this.interestGrp.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // interestGrd
+            // 
+            this.interestGrd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.interestGrd.Location = new System.Drawing.Point(5, 14);
+            this.interestGrd.Name = "interestGrd";
+            this.interestGrd.Size = new System.Drawing.Size(169, 207);
+            this.interestGrd.TabIndex = 0;
             // 
             // interestLbl
             // 
@@ -245,7 +252,6 @@
             this.interestLbl.Size = new System.Drawing.Size(104, 29);
             this.interestLbl.TabIndex = 0;
             this.interestLbl.Text = "Interests";
-            this.interestLbl.Click += new System.EventHandler(this.label9_Click);
             // 
             // friendsLbl
             // 
@@ -258,7 +264,6 @@
             this.friendsLbl.Size = new System.Drawing.Size(95, 29);
             this.friendsLbl.TabIndex = 21;
             this.friendsLbl.Text = "Friends";
-            this.friendsLbl.Click += new System.EventHandler(this.label16_Click);
             // 
             // profileLbl
             // 
@@ -271,7 +276,6 @@
             this.profileLbl.Size = new System.Drawing.Size(205, 31);
             this.profileLbl.TabIndex = 22;
             this.profileLbl.Text = "Personal Profile";
-            this.profileLbl.Click += new System.EventHandler(this.label17_Click);
             // 
             // addBtn
             // 
@@ -297,14 +301,6 @@
             this.chatBtn.Text = "Chat";
             this.chatBtn.UseVisualStyleBackColor = false;
             // 
-            // interestGrd
-            // 
-            this.interestGrd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.interestGrd.Location = new System.Drawing.Point(5, 14);
-            this.interestGrd.Name = "interestGrd";
-            this.interestGrd.Size = new System.Drawing.Size(169, 207);
-            this.interestGrd.TabIndex = 0;
-            // 
             // friendsGrp
             // 
             this.friendsGrp.Controls.Add(this.friendsGrd);
@@ -321,6 +317,30 @@
             this.friendsGrd.Name = "friendsGrd";
             this.friendsGrd.Size = new System.Drawing.Size(215, 207);
             this.friendsGrd.TabIndex = 1;
+            // 
+            // studentNumLbl
+            // 
+            this.studentNumLbl.AutoSize = true;
+            this.studentNumLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumLbl.ForeColor = System.Drawing.Color.Coral;
+            this.studentNumLbl.Location = new System.Drawing.Point(11, 43);
+            this.studentNumLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.studentNumLbl.Name = "studentNumLbl";
+            this.studentNumLbl.Size = new System.Drawing.Size(107, 20);
+            this.studentNumLbl.TabIndex = 24;
+            this.studentNumLbl.Text = "Student Num:";
+            // 
+            // studentNumVal
+            // 
+            this.studentNumVal.AutoSize = true;
+            this.studentNumVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumVal.ForeColor = System.Drawing.Color.OrangeRed;
+            this.studentNumVal.Location = new System.Drawing.Point(115, 43);
+            this.studentNumVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.studentNumVal.Name = "studentNumVal";
+            this.studentNumVal.Size = new System.Drawing.Size(27, 20);
+            this.studentNumVal.TabIndex = 23;
+            this.studentNumVal.Text = "22";
             // 
             // viewProfileFrm
             // 
@@ -381,5 +401,7 @@
         private System.Windows.Forms.DataGridView interestGrd;
         private System.Windows.Forms.GroupBox friendsGrp;
         private System.Windows.Forms.DataGridView friendsGrd;
+        private System.Windows.Forms.Label studentNumLbl;
+        private System.Windows.Forms.Label studentNumVal;
     }
 }
