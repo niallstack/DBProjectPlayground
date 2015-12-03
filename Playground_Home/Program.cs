@@ -20,7 +20,7 @@ namespace Playground_Home
 
             StudentDAOImpl instance = new StudentDAOImpl();
             instance.read(1);
-            instance.delete(124);
+           // instance.delete(124);
             MessageBox.Show(instance.read(1).toString());
         }
     }
