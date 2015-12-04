@@ -50,7 +50,48 @@ namespace Playground_Home
 
         private void RegisterStudentFrm_Load(object sender, EventArgs e)
         {
-
+            
         }
+
+        private void regBtn_Click(object sender, EventArgs e)
+        {
+            returnStudentValues();
+        }
+        private void returnStudentValues()
+        {
+            string studentIDAsString = studIDTxt.Text;
+            string forename = forenameTxt.Text;
+            string surname = surnameTxt.Text;
+            string dob = dobTxt.Text;
+            string schoolIDAsString = SchoolIDTxt.Text;
+            string groupIDAsString = groupIDTxt.Text;
+            string gender = genderTxt.Text;
+            string pictureColAsString = imgTxt.Text;
+            string password = passwordTxt.Text;
+            string studentNumber = studNumTxt.Text;
+            string status = statusTxt.Text;
+
+            int studentIDAsInt;
+            int schoolIDAsInt;
+            int groupIDAsInt;
+            Byte[] pictureAsByte;
+            Boolean isConvertable = false;
+            isConvertable = Int32.TryParse(studentIDAsString, out studentIDAsInt);
+            isConvertable = Int32.TryParse(schoolIDAsString, out schoolIDAsInt);
+            isConvertable = Int32.TryParse(groupIDAsString, out groupIDAsInt);
+            pictureAsByte = System.Text.Encoding.UTF8.GetBytes(pictureColAsString);
+            if (isConvertable == false)
+            {
+                MessageBox.Show("Field/s entered incorrectly ");
+            }
+            
+
+            StudentDAOImpl student = new StudentDAOImpl();
+            student.create(studentIDAsInt, forename, surname, dob, schoolIDAsInt, groupIDAsInt, gender, pictureAsByte, password, studentNumber, status);
+
+            
+        }
+
+        
     }
 }

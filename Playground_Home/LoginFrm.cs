@@ -123,6 +123,8 @@ namespace Playground_Home
             RegisterStudentFrm nf = new RegisterStudentFrm();
             this.Hide();
             nf.Show();
+            //checkLogin();
+            
         }
     }
 }
