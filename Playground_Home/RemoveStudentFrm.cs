@@ -92,5 +92,39 @@ namespace Playground_Home
         {
 
         }
+
+        //Author: Sean Gibbs 
+        private void delBtn_Click(object sender, EventArgs e)
+        {
+            DialogResult confirm = MessageBox.Show("Are you sure you want to Remove this Student?", "Warning",
+            MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            if (confirm == DialogResult.Yes)
+            {
+                remStudent();
+            }
+            else if (confirm == DialogResult.No)
+            {
+                
+            }
+            else if (confirm == DialogResult.Cancel)
+            {
+                
+            }
+        }
+        private void remStudent()
+        {
+            string studentIDAsString = studIDTxt.Text;
+
+            int studentIDAsInt;
+            Boolean isConvertable = false;
+            isConvertable = Int32.TryParse(studentIDAsString, out studentIDAsInt);
+            if (isConvertable == false)
+            {
+                MessageBox.Show("Field/s entered incorrectly ");
+            }
+            StudentDAOImpl student = new StudentDAOImpl();
+            student.delete(studentIDAsInt);
+            MessageBox.Show("This Student has been removed");
+        }
     }
 }
