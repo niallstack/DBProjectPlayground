@@ -9,6 +9,7 @@ namespace Playground_Home
 {
     class MessageDAO
     {
+        private StudentDAOImpl studentDao;
 
         private OracleConnection connection=null;
 
@@ -23,6 +24,7 @@ namespace Playground_Home
         {
             Connection = new OracleConnection("Data Source=cp3dbinstance.c4pxnpz4ojk8.us-east-1.rds.amazonaws.com:1521/cp3db;" + "User ID=sw4 ;Password=sw4");
             Connection.Open();
+            studentDao = new StudentDAOImpl();
         }
       
 
@@ -43,13 +45,29 @@ namespace Playground_Home
             reader = command.ExecuteReader();
 
             reader.Read();
-            StudentDAOImpl studentDao = new StudentDAOImpl();
+           
 
             Student stu = studentDao.read((int)reader.GetOracleNumber(1));
 
             return new Message((int)reader.GetOracleNumber(0),stu, reader.GetString(2));
         }
 
+        public List<Message> findAllSchool(int id)
+        {
+            OracleCommand command = Connection.CreateCommand();
+            OracleCommand co = new OracleCommand("Select * from MESSAGE where Message.messageid = (select MESSAGEID from SCHOOLMESSAGE where SCHOOLMESSAGE.SCHOOLID = "+id+")", Connection);
+            OracleDataReader reader;
+            reader = command.ExecuteReader();
+            Student stu;
+            List<Message> list = new List<Message>();
+            while (reader.Read())
+            {
+                stu = studentDao.read((int)reader.GetOracleNumber(1));
+                list.Add(new Message((int)reader.GetOracleNumber(0), stu, reader.GetString(2)));
+
+            }
+            return list;
+        }
         
     }
 }

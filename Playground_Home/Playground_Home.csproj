@@ -87,6 +87,8 @@
     <Compile Include="RemoveStudentFrm.Designer.cs">
       <DependentUpon>RemoveStudentFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="School.cs" />
+    <Compile Include="SchoolDAO.cs" />
     <Compile Include="SchoolMessageFrm.cs">
       <SubType>Form</SubType>
     </Compile>
