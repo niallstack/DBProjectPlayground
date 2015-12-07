@@ -12,9 +12,21 @@ namespace Playground_Home
 {
     public partial class SchoolMessageFrm : Form
     {
+        StudentImpl stu;
+        School school;
+        StudentDAOImpl studao = new StudentDAOImpl();
+        MessageDAO mesdao = new MessageDAO();
+        SchoolDAO schodao = new SchoolDAO();
+
         public SchoolMessageFrm()
         {
+            
             InitializeComponent();
+
+     
+            stu = studao.read(4);
+            school = schodao.FindOne(stu.getSchoolID());
+
             listView1.View = View.Details;
             // Allow the user to edit item text.
             listView1.LabelEdit = true;
@@ -31,6 +43,16 @@ namespace Playground_Home
 
             listView1.Columns.Add("AUTHOR", -2, HorizontalAlignment.Left);
             listView1.Columns.Add("MESSAGE", -2, HorizontalAlignment.Left);
+            
+            List<Message> list = mesdao.findAllSchool(1);
+            ListViewItem item;
+            foreach (Message m in list)
+            {
+                item = new ListViewItem(m.Autor.getForename(), 1);
+                item.SubItems.Add(m.MessageDetail);
+                listView1.Items.AddRange(new ListViewItem[] { item });
+
+            }
 
         }
 
@@ -46,6 +68,8 @@ namespace Playground_Home
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Message message = new Message(-1, stu, richTextBox1.Text);
+            schodao.AddSchoolMessage(message, school);
 
         }
 

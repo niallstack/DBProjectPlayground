@@ -15,10 +15,10 @@ namespace Playground_Home
        private int schoolID;
        private int groupID;
        private String gender;
-        private Byte[] pictureCol;
+       private Byte[] pictureCol;
        private String password;
        private String studentNumber;
-        private String status;
+       private String status;
 
 
         public StudentImpl(int studentID, string forename, string surname, string dob, int schoolID, int groupID, 

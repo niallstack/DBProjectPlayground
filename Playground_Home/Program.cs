@@ -17,13 +17,14 @@ namespace Playground_Home
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new RegisterStudentFrm());
-            Application.Run(new SchoolMessageFrm());
-           // Application.Run(new Playground_frm());
-
-           // StudentDAOImpl instance = new StudentDAOImpl();
+            //Application.Run(new SchoolMessageFrm());
+            // Application.Run(new Playground_frm());
+            MessageDAO dao = new MessageDAO();
+            Message mes = dao.FindOne(1);
+            // StudentDAOImpl instance = new StudentDAOImpl();
             //instance.read(1);
-           // instance.delete(123);
-           // MessageBox.Show(instance.read(1).toString());
+            // instance.delete(123);
+            // MessageBox.Show(instance.read(1).toString());
         }
     }
 }
