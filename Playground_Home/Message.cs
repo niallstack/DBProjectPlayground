@@ -10,8 +10,13 @@ namespace Playground_Home
     {
         private String messageDetail;
         private Student autor;
+        private int id;
 
-   
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
 
         public String MessageDetail
         {
@@ -25,6 +30,12 @@ namespace Playground_Home
             set { autor = value; }
         }
 
+        public Message(int id, Student student, String messageDetail)
+        {
+            MessageDetail = messageDetail;
+            Autor = student;
+            Id = id;
+        }
 
 
     }

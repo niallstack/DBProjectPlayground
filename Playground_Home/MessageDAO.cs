@@ -26,15 +26,30 @@ namespace Playground_Home
         }
       
 
-
-
-
         public Boolean InsertMessage(Message message)
         {
             OracleCommand command = Connection.CreateCommand();
-            OracleCommand co = new OracleCommand("Select * from truc", Connection);
+            OracleCommand co = new OracleCommand("Insert into Message values(message_seq.nextval," + message.Autor.getStudentID() + "," + message.MessageDetail+")", Connection);
 
-            return true;
+            return command.ExecuteNonQuery() >0 ;
         }
+
+        public Message FindOne(int id)
+        {
+            OracleCommand command = Connection.CreateCommand();
+            OracleCommand co = new OracleCommand("Select * from Message where Message.id="+ id+")", Connection);
+
+            OracleDataReader reader;
+            reader = command.ExecuteReader();
+
+            reader.Read();
+            StudentDAOImpl studentDao = new StudentDAOImpl();
+
+            Student stu = studentDao.read((int)reader.GetOracleNumber(1));
+
+            return new Message((int)reader.GetOracleNumber(0),stu, reader.GetString(2));
+        }
+
+        
     }
 }
