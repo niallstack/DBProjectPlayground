@@ -16,12 +16,14 @@ namespace Playground_Home
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Playground_frm());
+           // Application.Run(new Playground_frm());
+
+            Application.Run(new viewProfileFrm());
 
             StudentDAOImpl instance = new StudentDAOImpl();
-            instance.read(1);
-           // instance.delete(124);
-            MessageBox.Show(instance.read(1).toString());
+            //instance.read(1);
+           // instance.delete(123);
+           // MessageBox.Show(instance.read(1).toString());
         }
     }
 }

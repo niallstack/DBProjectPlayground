@@ -38,6 +38,8 @@ namespace Playground_Home
         {
            
         }
+
+
         //Author: Aleksandar Zoric
         public void checkLogin()
         {
@@ -58,7 +60,7 @@ namespace Playground_Home
                 
 
                 string usernameCmd = "SELECT studentNumber FROM Students WHERE StudentNumber = '" + username + "'";
-                string passwordCmd = "SELECT password FROM Students WHERE StudentNumber = '" + username + "'";
+                string passwordCmd = "SELECT studentPassword FROM Students WHERE StudentNumber = '" + username + "'";
 
                 command.CommandText = usernameCmd;
                 command1.CommandText = passwordCmd;
@@ -69,7 +71,7 @@ namespace Playground_Home
                 if(usernameReader.HasRows && passwordReader.HasRows)
                 {
                     OracleCommand command2 = connection.CreateCommand();
-                    string studentIDcmd = "SELECT studentID FROM Students WHERE StudentNumber = '" + username + "' AND password = '" + password + "'";
+                    string studentIDcmd = "SELECT studentID FROM Students WHERE StudentNumber = '" + username + "' AND studentPassword = '" + password + "'";
 
                     command2.CommandText = studentIDcmd;
 
@@ -77,6 +79,7 @@ namespace Playground_Home
                     if(extractStudentID != null)
                     {
                         studentIDasString = extractStudentID;
+                        
                     }
 
                     //open profile form
@@ -112,18 +115,17 @@ namespace Playground_Home
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            /* if ((userNameTxt.Text == "admin") && (passwordTxt.Text == "test123"))
+             if ((userNameTxt.Text == "admin") && (passwordTxt.Text == "test123"))
              {
-                 RegisterStudentFrm nf = new RegisterStudentFrm();
+                 RegisterStudentFrm nff = new RegisterStudentFrm();
                  this.Close();
-                 nf.Show();
+                 nff.Show();
              }
-             else
-                 this.Close();*/
-            RegisterStudentFrm nf = new RegisterStudentFrm();
+             
+            viewProfileFrm nf = new viewProfileFrm();
             this.Hide();
             nf.Show();
-            //checkLogin();
+            checkLogin();
             
         }
     }
