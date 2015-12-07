@@ -38,7 +38,7 @@ namespace Playground_Home
 
             List<Message> list = new List();
 
-            School school = new School((int)reader.GetOracleNumber(0), reader.GetString(1),list)
+            School school = new School((int)reader.GetOracleNumber(0), reader.GetString(1), list);
 
             return school;
         }
