@@ -56,6 +56,9 @@ namespace Playground_Home
         private void regBtn_Click(object sender, EventArgs e)
         {
             returnStudentValues();
+            MessageBox.Show("Student Has Been Added To The System");
+           
+
         }
         //Author: Niall Stack
         private void returnStudentValues()
@@ -67,9 +70,9 @@ namespace Playground_Home
             string schoolIDAsString = SchoolIDTxt.Text;
             string groupIDAsString = groupIDTxt.Text;
             string gender = genderTxt.Text;
-            string pictureColAsString = imgTxt.Text;
-            string password = passwordTxt.Text;
-            string studentNumber = studNumTxt.Text;
+            string pictureColAsString = imgTxt.Text.Trim();
+            string studentpassword = passwordTxt.Text;
+            string studentNumber = studNumTxt.Text.Trim();
             string status = statusTxt.Text;
 
             int studentIDAsInt;
@@ -88,7 +91,7 @@ namespace Playground_Home
             
 
             StudentDAOImpl student = new StudentDAOImpl();
-            student.create(studentIDAsInt, forename, surname, dob, schoolIDAsInt, groupIDAsInt, gender, pictureAsByte, password, studentNumber, status);
+            student.create(studentIDAsInt, forename, surname, dob, schoolIDAsInt, groupIDAsInt, gender, pictureAsByte, studentpassword, studentNumber, status);
 
             
         }

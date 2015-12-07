@@ -118,7 +118,7 @@ namespace Playground_Home
              if ((userNameTxt.Text == "admin") && (passwordTxt.Text == "test123"))
              {
                  RegisterStudentFrm nff = new RegisterStudentFrm();
-                 this.Close();
+                 this.Hide();
                  nff.Show();
              }
              

@@ -16,9 +16,9 @@ namespace Playground_Home
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-           // Application.Run(new Playground_frm());
+            //Application.Run(new RegisterStudentFrm());
 
-            Application.Run(new viewProfileFrm());
+            Application.Run(new Playground_frm());
 
             StudentDAOImpl instance = new StudentDAOImpl();
             //instance.read(1);

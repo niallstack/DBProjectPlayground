@@ -42,8 +42,8 @@ namespace Playground_Home
 
                     OracleCommand command = connection.CreateCommand();
 
-                    string sql = "INSERT INTO Students (studentID, forename, surname, dob, schoolID, groupID, gender, pictureCol, password, studentNumber, status) VALUES (" + studentID + ",'" + forename +
-                "','" + surname + "','" + dob + "'," + schoolID + "," + groupID + ",'" + gender + "'," + pictureCol + ",'" + password + "'," + studentNumber + ",'" + status + "')";
+                    string sql = "INSERT INTO Students (studentID, forename, surname, dob, schoolID, classID, gender, image, studentpassword, studentNumber, status) VALUES (" + studentID + ",'" + forename +
+                "','" + surname + "','" + dob + "'," + schoolID + "," + groupID + ",'" + gender + "','" + null + "','" + password + "','" + studentNumber + "','" + status + "')";
 
                     command.CommandText = sql;
 
