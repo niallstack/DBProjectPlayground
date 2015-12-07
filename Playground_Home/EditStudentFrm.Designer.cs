@@ -98,6 +98,7 @@
             this.logoutBtn.TabIndex = 24;
             this.logoutBtn.Text = "Log Out";
             this.logoutBtn.UseVisualStyleBackColor = false;
+            this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
             // editStuLinkLbl
             // 

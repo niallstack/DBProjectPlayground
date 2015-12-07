@@ -55,7 +55,9 @@ namespace Playground_Home
 
         private void logoutBtn_Click(object sender, EventArgs e)
         {
-
+            Playground_frm nf = new Playground_frm();
+            this.Close();
+            nf.Show();
         }
 
         private void studGrd_CellContentClick(object sender, DataGridViewCellEventArgs e)
