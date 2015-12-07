@@ -65,6 +65,8 @@
     <Compile Include="LoginFrm.Designer.cs">
       <DependentUpon>LoginFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Message.cs" />
+    <Compile Include="MessageDAO.cs" />
     <Compile Include="PrivateMessageFrm.cs">
       <SubType>Form</SubType>
     </Compile>
