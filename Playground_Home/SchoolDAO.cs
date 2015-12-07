@@ -36,7 +36,7 @@ namespace Playground_Home
             reader.Read();
             StudentDAOImpl studentDao = new StudentDAOImpl();
 
-            List<Message> list = new List();
+            List<Message> list = new List<Message>();
 
             School school = new School((int)reader.GetOracleNumber(0), reader.GetString(1), list);
 
