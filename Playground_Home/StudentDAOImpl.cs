@@ -77,7 +77,7 @@ namespace Playground_Home
 
                     OracleCommand command = connection.CreateCommand();
 
-                    string sql = "UPDATE status SET status ='i' WHERE StudentID = " + studentID;
+                    string sql = "UPDATE Students SET status ='U' WHERE StudentID = " + studentID;
 
                     command.CommandText = sql;
                     command.ExecuteNonQuery();
