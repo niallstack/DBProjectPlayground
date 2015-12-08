@@ -115,18 +115,19 @@ namespace Playground_Home
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-             if ((userNameTxt.Text == "admin") && (passwordTxt.Text == "test123"))
-             {
-                 RegisterStudentFrm nff = new RegisterStudentFrm();
-                 this.Hide();
-                 nff.Show();
-             }
-             
-            viewProfileFrm nf = new viewProfileFrm();
-            this.Hide();
-            nf.Show();
-            checkLogin();
-            
+            if ((userNameTxt.Text == "admin") && (passwordTxt.Text == "test123"))
+            {
+                RegisterStudentFrm nff = new RegisterStudentFrm();
+                this.Hide();
+                nff.Show();
+            }
+            else
+            {
+                viewProfileFrm nf = new viewProfileFrm();
+                this.Hide();
+                nf.Show();
+                checkLogin();
+            }
         }
     }
 }

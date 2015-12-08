@@ -102,5 +102,26 @@ namespace Playground_Home
             this.Close();
             nf.Show();
         }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewProfileFrm nf = new viewProfileFrm();
+            this.Close();
+            nf.Show();
+        }
+
+        private void schoolWallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SchoolMessageFrm nf = new SchoolMessageFrm();
+            this.Close();
+            nf.Show();
+        }
+
+        private void messagesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrivateMessageFrm nf = new PrivateMessageFrm();
+            this.Close();
+            nf.Show();
+        }
     }
 }

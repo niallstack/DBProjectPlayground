@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EditStudentFrm));
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.menuPnl = new System.Windows.Forms.Panel();
             this.logoutBtn = new System.Windows.Forms.Button();
             this.editStuLinkLbl = new System.Windows.Forms.LinkLabel();
@@ -61,19 +60,14 @@
             this.imageLbl = new System.Windows.Forms.Label();
             this.imgTxt = new System.Windows.Forms.TextBox();
             this.genderLbl = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.schoolWallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.messagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studGrd)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // menuStrip
-            // 
-            this.menuStrip.BackColor = System.Drawing.Color.OrangeRed;
-            this.menuStrip.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(913, 24);
-            this.menuStrip.TabIndex = 3;
-            this.menuStrip.Text = "menuStrip";
             // 
             // menuPnl
             // 
@@ -385,12 +379,51 @@
             this.genderLbl.TabIndex = 59;
             this.genderLbl.Text = "Gender";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.OrangeRed;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profileToolStripMenuItem,
+            this.schoolWallToolStripMenuItem,
+            this.messagesToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(913, 24);
+            this.menuStrip1.TabIndex = 67;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
+            // 
+            // schoolWallToolStripMenuItem
+            // 
+            this.schoolWallToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.schoolWallToolStripMenuItem.Name = "schoolWallToolStripMenuItem";
+            this.schoolWallToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.schoolWallToolStripMenuItem.Text = "School Wall";
+            this.schoolWallToolStripMenuItem.Click += new System.EventHandler(this.schoolWallToolStripMenuItem_Click);
+            // 
+            // messagesToolStripMenuItem
+            // 
+            this.messagesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.messagesToolStripMenuItem.Name = "messagesToolStripMenuItem";
+            this.messagesToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.messagesToolStripMenuItem.Text = "Messages";
+            this.messagesToolStripMenuItem.Click += new System.EventHandler(this.messagesToolStripMenuItem_Click);
+            // 
             // EditStudentFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(913, 565);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.genCBM);
             this.Controls.Add(this.studNumTxt);
             this.Controls.Add(this.stuNumTxt);
@@ -418,7 +451,6 @@
             this.Controls.Add(this.studGrd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuPnl);
-            this.Controls.Add(this.menuStrip);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "EditStudentFrm";
             this.Text = "Edit Student";
@@ -426,14 +458,14 @@
             this.menuPnl.ResumeLayout(false);
             this.menuPnl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.studGrd)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip;
         private System.Windows.Forms.Panel menuPnl;
         private System.Windows.Forms.Button logoutBtn;
         private System.Windows.Forms.LinkLabel editStuLinkLbl;
@@ -465,5 +497,9 @@
         private System.Windows.Forms.Label imageLbl;
         private System.Windows.Forms.TextBox imgTxt;
         private System.Windows.Forms.Label genderLbl;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem schoolWallToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem messagesToolStripMenuItem;
     }
 }

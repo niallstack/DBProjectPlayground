@@ -128,5 +128,31 @@ namespace Playground_Home
             student.delete(studentIDAsInt);
             MessageBox.Show("This Student has been removed");
         }
+
+        private void menuStrip_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewProfileFrm nf = new viewProfileFrm();
+            this.Close();
+            nf.Show();
+        }
+
+        private void schoolWallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SchoolMessageFrm nf = new SchoolMessageFrm();
+            this.Close();
+            nf.Show();
+        }
+
+        private void messagesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrivateMessageFrm nf = new PrivateMessageFrm();
+            this.Close();
+            nf.Show();
+        }
     }
 }
