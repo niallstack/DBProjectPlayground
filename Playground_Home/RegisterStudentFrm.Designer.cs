@@ -59,6 +59,10 @@
             this.genderTxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.statusTxt = new System.Windows.Forms.TextBox();
+            this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.schoolWallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.messagesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip.SuspendLayout();
             this.menuPnl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +70,10 @@
             // 
             this.menuStrip.BackColor = System.Drawing.Color.OrangeRed;
             this.menuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.profileToolStripMenuItem,
+            this.schoolWallToolStripMenuItem,
+            this.messagesToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Size = new System.Drawing.Size(694, 24);
@@ -88,9 +96,9 @@
             this.menuPnl.Controls.Add(this.editStuLinkLbl);
             this.menuPnl.Controls.Add(this.delStuLinkLbl);
             this.menuPnl.Controls.Add(this.regStuLinkLbl);
-            this.menuPnl.Location = new System.Drawing.Point(0, 28);
+            this.menuPnl.Location = new System.Drawing.Point(0, 27);
             this.menuPnl.Name = "menuPnl";
-            this.menuPnl.Size = new System.Drawing.Size(137, 483);
+            this.menuPnl.Size = new System.Drawing.Size(137, 504);
             this.menuPnl.TabIndex = 3;
             // 
             // logoutBtn
@@ -98,7 +106,7 @@
             this.logoutBtn.BackColor = System.Drawing.Color.OrangeRed;
             this.logoutBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.logoutBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.logoutBtn.Location = new System.Drawing.Point(6, 431);
+            this.logoutBtn.Location = new System.Drawing.Point(6, 449);
             this.logoutBtn.Name = "logoutBtn";
             this.logoutBtn.Size = new System.Drawing.Size(122, 43);
             this.logoutBtn.TabIndex = 24;
@@ -217,7 +225,7 @@
             // 
             // groupIDTxt
             // 
-            this.groupIDTxt.Location = new System.Drawing.Point(443, 246);
+            this.groupIDTxt.Location = new System.Drawing.Point(440, 246);
             this.groupIDTxt.Name = "groupIDTxt";
             this.groupIDTxt.Size = new System.Drawing.Size(200, 20);
             this.groupIDTxt.TabIndex = 12;
@@ -238,7 +246,7 @@
             this.imageLbl.AutoSize = true;
             this.imageLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imageLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.imageLbl.Location = new System.Drawing.Point(351, 333);
+            this.imageLbl.Location = new System.Drawing.Point(348, 322);
             this.imageLbl.Name = "imageLbl";
             this.imageLbl.Size = new System.Drawing.Size(54, 20);
             this.imageLbl.TabIndex = 17;
@@ -247,7 +255,7 @@
             // imgTxt
             // 
             this.imgTxt.Enabled = false;
-            this.imgTxt.Location = new System.Drawing.Point(443, 333);
+            this.imgTxt.Location = new System.Drawing.Point(440, 322);
             this.imgTxt.Name = "imgTxt";
             this.imgTxt.Size = new System.Drawing.Size(200, 20);
             this.imgTxt.TabIndex = 16;
@@ -257,7 +265,7 @@
             this.passwordLbl.AutoSize = true;
             this.passwordLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordLbl.ForeColor = System.Drawing.Color.OrangeRed;
-            this.passwordLbl.Location = new System.Drawing.Point(327, 369);
+            this.passwordLbl.Location = new System.Drawing.Point(327, 359);
             this.passwordLbl.Name = "passwordLbl";
             this.passwordLbl.Size = new System.Drawing.Size(78, 20);
             this.passwordLbl.TabIndex = 19;
@@ -265,7 +273,7 @@
             // 
             // passwordTxt
             // 
-            this.passwordTxt.Location = new System.Drawing.Point(443, 369);
+            this.passwordTxt.Location = new System.Drawing.Point(440, 359);
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.Size = new System.Drawing.Size(200, 20);
             this.passwordTxt.TabIndex = 18;
@@ -275,7 +283,7 @@
             this.studNumTxt.AutoSize = true;
             this.studNumTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.studNumTxt.ForeColor = System.Drawing.Color.OrangeRed;
-            this.studNumTxt.Location = new System.Drawing.Point(279, 408);
+            this.studNumTxt.Location = new System.Drawing.Point(276, 396);
             this.studNumTxt.Name = "studNumTxt";
             this.studNumTxt.Size = new System.Drawing.Size(126, 20);
             this.studNumTxt.TabIndex = 21;
@@ -283,7 +291,7 @@
             // 
             // stuNumTxt
             // 
-            this.stuNumTxt.Location = new System.Drawing.Point(443, 408);
+            this.stuNumTxt.Location = new System.Drawing.Point(440, 396);
             this.stuNumTxt.Name = "stuNumTxt";
             this.stuNumTxt.Size = new System.Drawing.Size(200, 20);
             this.stuNumTxt.TabIndex = 20;
@@ -293,7 +301,7 @@
             this.regBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.regBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regBtn.ForeColor = System.Drawing.Color.OrangeRed;
-            this.regBtn.Location = new System.Drawing.Point(467, 468);
+            this.regBtn.Location = new System.Drawing.Point(483, 476);
             this.regBtn.Name = "regBtn";
             this.regBtn.Size = new System.Drawing.Size(122, 43);
             this.regBtn.TabIndex = 23;
@@ -339,7 +347,7 @@
             // 
             // genderTxt
             // 
-            this.genderTxt.Location = new System.Drawing.Point(443, 289);
+            this.genderTxt.Location = new System.Drawing.Point(440, 287);
             this.genderTxt.Name = "genderTxt";
             this.genderTxt.Size = new System.Drawing.Size(200, 20);
             this.genderTxt.TabIndex = 28;
@@ -349,7 +357,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label2.Location = new System.Drawing.Point(350, 441);
+            this.label2.Location = new System.Drawing.Point(349, 432);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 30;
@@ -357,17 +365,41 @@
             // 
             // statusTxt
             // 
-            this.statusTxt.Location = new System.Drawing.Point(446, 443);
+            this.statusTxt.Location = new System.Drawing.Point(440, 432);
             this.statusTxt.Name = "statusTxt";
             this.statusTxt.Size = new System.Drawing.Size(200, 20);
             this.statusTxt.TabIndex = 29;
+            // 
+            // profileToolStripMenuItem
+            // 
+            this.profileToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.profileToolStripMenuItem.Text = "Profile";
+            this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
+            // 
+            // schoolWallToolStripMenuItem
+            // 
+            this.schoolWallToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.schoolWallToolStripMenuItem.Name = "schoolWallToolStripMenuItem";
+            this.schoolWallToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.schoolWallToolStripMenuItem.Text = "School Wall";
+            this.schoolWallToolStripMenuItem.Click += new System.EventHandler(this.schoolWallToolStripMenuItem_Click);
+            // 
+            // messagesToolStripMenuItem
+            // 
+            this.messagesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.messagesToolStripMenuItem.Name = "messagesToolStripMenuItem";
+            this.messagesToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.messagesToolStripMenuItem.Text = "Messages";
+            this.messagesToolStripMenuItem.Click += new System.EventHandler(this.messagesToolStripMenuItem_Click);
             // 
             // RegisterStudentFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(694, 512);
+            this.ClientSize = new System.Drawing.Size(694, 531);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.statusTxt);
             this.Controls.Add(this.genderTxt);
@@ -398,6 +430,8 @@
             this.Name = "RegisterStudentFrm";
             this.Text = "Register Student";
             this.Load += new System.EventHandler(this.RegisterStudentFrm_Load);
+            this.menuStrip.ResumeLayout(false);
+            this.menuStrip.PerformLayout();
             this.menuPnl.ResumeLayout(false);
             this.menuPnl.PerformLayout();
             this.ResumeLayout(false);
@@ -437,5 +471,8 @@
         private System.Windows.Forms.TextBox genderTxt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox statusTxt;
+        private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem schoolWallToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem messagesToolStripMenuItem;
     }
 }

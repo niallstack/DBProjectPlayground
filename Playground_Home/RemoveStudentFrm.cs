@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OracleClient;
 
 namespace Playground_Home
 {
@@ -19,7 +20,30 @@ namespace Playground_Home
 
         private void RemoveStudentFrm_Load(object sender, EventArgs e)
         {
+            //Author: Niall Stack - t00174406 
+            string CloudDB = "Data Source=cp3dbinstance.c4pxnpz4ojk8.us-east-1.rds.amazonaws.com:1521/cp3db;User Id=sw4;Password=sw4;";
+            try
+            {
+                OracleConnection conn = new OracleConnection(CloudDB);
 
+                OracleCommand cmd = new OracleCommand("SELECT * FROM Students", conn);
+
+                cmd.CommandType = CommandType.Text;
+
+                OracleDataAdapter da = new OracleDataAdapter(cmd);
+
+                DataSet ds = new DataSet();
+
+                da.Fill(ds, "ss");
+
+                studGrd.DataSource = ds.Tables["ss"];
+
+                conn.Close();
+            }
+            catch (OracleException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void menuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -127,6 +151,32 @@ namespace Playground_Home
             StudentDAOImpl student = new StudentDAOImpl();
             student.delete(studentIDAsInt);
             MessageBox.Show("This Student has been removed");
+        }
+
+        private void menuStrip_ItemClicked_1(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void profileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            viewProfileFrm nf = new viewProfileFrm();
+            this.Close();
+            nf.Show();
+        }
+
+        private void schoolWallToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SchoolMessageFrm nf = new SchoolMessageFrm();
+            this.Close();
+            nf.Show();
+        }
+
+        private void messagesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PrivateMessageFrm nf = new PrivateMessageFrm();
+            this.Close();
+            nf.Show();
         }
     }
 }
