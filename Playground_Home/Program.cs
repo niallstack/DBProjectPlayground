@@ -18,9 +18,9 @@ namespace Playground_Home
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new RegisterStudentFrm());
             //Application.Run(new SchoolMessageFrm());
-            // Application.Run(new Playground_frm());
+             Application.Run(new Playground_frm());
             MessageDAO dao = new MessageDAO();
-            Message mes = dao.FindOne(1);
+            //Message mes = dao.FindOne(1);
             // StudentDAOImpl instance = new StudentDAOImpl();
             //instance.read(1);
             // instance.delete(123);

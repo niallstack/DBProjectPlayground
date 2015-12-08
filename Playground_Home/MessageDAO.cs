@@ -44,11 +44,11 @@ namespace Playground_Home
 
         }
         
-        public Message FindOne(int id)
+       /* public Message FindOne(int id)
         {
 
             connec.Open();
-            OracleCommand command = new OracleCommand("Select * from Message where Message.id="+ id+")", connec);
+            OracleCommand command = new OracleCommand("Select * from Message where Messageid="+ id, connec);
             
             OracleDataReader reader;
             reader = command.ExecuteReader();
@@ -59,7 +59,7 @@ namespace Playground_Home
             Student stu = studentDao.read((int)reader.GetOracleNumber(1));
 
             return new Message((int)reader.GetOracleNumber(0),stu, reader.GetString(2));
-        }
+        }*/
         
         public List<Message> findAllSchool(int id)
         {

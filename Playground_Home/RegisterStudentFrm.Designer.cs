@@ -246,6 +246,7 @@
             // 
             // imgTxt
             // 
+            this.imgTxt.Enabled = false;
             this.imgTxt.Location = new System.Drawing.Point(443, 333);
             this.imgTxt.Name = "imgTxt";
             this.imgTxt.Size = new System.Drawing.Size(200, 20);
