@@ -19,7 +19,10 @@ namespace Playground_Home
             //Application.Run(new RegisterStudentFrm());
             //Application.Run(new SchoolMessageFrm());
              Application.Run(new Playground_frm());
-            MessageDAO dao = new MessageDAO();
+            //Application.Run(new viewProfileFrm());
+           // Application.Run(new RemoveStudentFrm());
+
+            //MessageDAO dao = new MessageDAO();
             //Message mes = dao.FindOne(1);
             // StudentDAOImpl instance = new StudentDAOImpl();
             //instance.read(1);

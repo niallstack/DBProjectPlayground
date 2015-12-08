@@ -17,25 +17,27 @@ namespace Playground_Home
             InitializeComponent();
         }
 
+        int loggedStudentID;
         private void viewProfileFrm_Load(object sender, EventArgs e)
 
         {
             StudentDAOImpl student = new StudentDAOImpl();
 
             Playground_frm loginForm = new Playground_frm();
+           
 
-            int loggedStudentID;
-            loggedStudentID = loginForm.returnStudentID();
 
-            forenameVal.Text = student.read(loggedStudentID).getForename();
-            surnameVal.Text = student.read(loggedStudentID).getSurname();
-            dobVal.Text = student.read(loggedStudentID).getDOB();
-            genderVal.Text = student.read(loggedStudentID).getGender();
-            studentNumVal.Text = student.read(loggedStudentID).getStudentNumber();
+            
+            loggedStudentID = loginForm.returnID();
+            MessageBox.Show(loggedStudentID.ToString() + " view");
+
+            forenameVal.Text = student.read(34).getForename();
+            surnameVal.Text = student.read(34).getSurname();
+            dobVal.Text = student.read(34).getDOB();
+            genderVal.Text = student.read(34).getGender();
+            studentNumVal.Text = student.read(34).getStudentNumber();
 
         }
-
-
 
     }
 }

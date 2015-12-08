@@ -33,6 +33,8 @@
             this.profileImg = new System.Windows.Forms.PictureBox();
             this.logoImg = new System.Windows.Forms.PictureBox();
             this.aboutGrp = new System.Windows.Forms.GroupBox();
+            this.studentNumLbl = new System.Windows.Forms.Label();
+            this.studentNumVal = new System.Windows.Forms.Label();
             this.surnameLbl = new System.Windows.Forms.Label();
             this.surnameVal = new System.Windows.Forms.Label();
             this.genderVal = new System.Windows.Forms.Label();
@@ -51,8 +53,6 @@
             this.chatBtn = new System.Windows.Forms.Button();
             this.friendsGrp = new System.Windows.Forms.GroupBox();
             this.friendsGrd = new System.Windows.Forms.DataGridView();
-            this.studentNumLbl = new System.Windows.Forms.Label();
-            this.studentNumVal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.profileImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoImg)).BeginInit();
             this.aboutGrp.SuspendLayout();
@@ -113,6 +113,30 @@
             this.aboutGrp.Size = new System.Drawing.Size(232, 230);
             this.aboutGrp.TabIndex = 12;
             this.aboutGrp.TabStop = false;
+            // 
+            // studentNumLbl
+            // 
+            this.studentNumLbl.AutoSize = true;
+            this.studentNumLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumLbl.ForeColor = System.Drawing.Color.Coral;
+            this.studentNumLbl.Location = new System.Drawing.Point(11, 43);
+            this.studentNumLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.studentNumLbl.Name = "studentNumLbl";
+            this.studentNumLbl.Size = new System.Drawing.Size(107, 20);
+            this.studentNumLbl.TabIndex = 24;
+            this.studentNumLbl.Text = "Student Num:";
+            // 
+            // studentNumVal
+            // 
+            this.studentNumVal.AutoSize = true;
+            this.studentNumVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.studentNumVal.ForeColor = System.Drawing.Color.OrangeRed;
+            this.studentNumVal.Location = new System.Drawing.Point(115, 43);
+            this.studentNumVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.studentNumVal.Name = "studentNumVal";
+            this.studentNumVal.Size = new System.Drawing.Size(27, 20);
+            this.studentNumVal.TabIndex = 23;
+            this.studentNumVal.Text = "22";
             // 
             // surnameLbl
             // 
@@ -317,30 +341,7 @@
             this.friendsGrd.Name = "friendsGrd";
             this.friendsGrd.Size = new System.Drawing.Size(215, 207);
             this.friendsGrd.TabIndex = 1;
-            // 
-            // studentNumLbl
-            // 
-            this.studentNumLbl.AutoSize = true;
-            this.studentNumLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNumLbl.ForeColor = System.Drawing.Color.Coral;
-            this.studentNumLbl.Location = new System.Drawing.Point(11, 43);
-            this.studentNumLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.studentNumLbl.Name = "studentNumLbl";
-            this.studentNumLbl.Size = new System.Drawing.Size(107, 20);
-            this.studentNumLbl.TabIndex = 24;
-            this.studentNumLbl.Text = "Student Num:";
-            // 
-            // studentNumVal
-            // 
-            this.studentNumVal.AutoSize = true;
-            this.studentNumVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.studentNumVal.ForeColor = System.Drawing.Color.OrangeRed;
-            this.studentNumVal.Location = new System.Drawing.Point(115, 43);
-            this.studentNumVal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.studentNumVal.Name = "studentNumVal";
-            this.studentNumVal.Size = new System.Drawing.Size(27, 20);
-            this.studentNumVal.TabIndex = 23;
-            this.studentNumVal.Text = "22";
+//            this.friendsGrd.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.friendsGrd_CellContentClick);
             // 
             // viewProfileFrm
             // 

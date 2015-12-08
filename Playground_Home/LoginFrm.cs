@@ -15,6 +15,7 @@ namespace Playground_Home
     public partial class Playground_frm : Form
     {
         string studentIDasString;
+        int myID;
 
         static private string GetConnectionString(String username, String password)
         {
@@ -27,6 +28,7 @@ namespace Playground_Home
         public Playground_frm()
         {
             InitializeComponent();
+            returnID();
         }
 
         private void passwordTxt_TextChanged(object sender, EventArgs e)
@@ -36,7 +38,7 @@ namespace Playground_Home
 
         private void Playground_frm_Load(object sender, EventArgs e)
         {
-           
+            returnID();
         }
 
 
@@ -79,6 +81,7 @@ namespace Playground_Home
                     if(extractStudentID != null)
                     {
                         studentIDasString = extractStudentID;
+                        myID = returnStudentID();
                         
                     }
 
@@ -112,10 +115,17 @@ namespace Playground_Home
             return studentIDasNum;
         }
 
+        public int returnID()
+        {
+            return myID;
+        }
+
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-             if ((userNameTxt.Text == "admin") && (passwordTxt.Text == "test123"))
+            checkLogin();
+            returnID();
+            if ((userNameTxt.Text == "admin") && (passwordTxt.Text == "test123"))
              {
                  RegisterStudentFrm nff = new RegisterStudentFrm();
                  this.Hide();
@@ -125,7 +135,7 @@ namespace Playground_Home
             viewProfileFrm nf = new viewProfileFrm();
             this.Hide();
             nf.Show();
-            checkLogin();
+           
             
         }
     }
